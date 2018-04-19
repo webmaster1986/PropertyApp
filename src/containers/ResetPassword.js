@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Service from '../utils/apiService';
 import Header from '../components/common/Header';
-import Footer from '../components/common/Footer';
 import Button from '../components/common/Button';
 
 class ResetPassword extends Component {

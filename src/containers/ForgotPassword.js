@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import common from '../utils/common';
 import Service from '../utils/apiService';
 import Header from '../components/common/Header';
-import Footer from '../components/common/Footer';
 import Button from '../components/common/Button';
 
 class ForgotPassword extends Component {
@@ -65,7 +64,6 @@ class ForgotPassword extends Component {
                         </form>
                     </div>
                 </main>
-                <Footer/>
             </div>
         );
     }

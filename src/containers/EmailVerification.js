@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Service from '../utils/apiService';
 import Header from '../components/common/Header';
-import Footer from '../components/common/Footer';
 import Button from '../components/common/Button';
 import common from '../utils/common';
 
@@ -102,7 +101,6 @@ class EmailVerification extends Component {
                         }
                     </main>
                 }
-                <Footer/>
             </div>
         );
     }

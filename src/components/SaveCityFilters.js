@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Footer from '../components/common/Footer';
 import SearchFiltertabs from './common/SaveCItyFiltersTabs';
 import CONST from '../utils/CONST';
 import Service from '../utils/apiService';
@@ -210,7 +209,6 @@ class SearchFilter extends Component {
                     </div>
                     }
                 </div>
-                <Footer/>
             </div>
         );
     }

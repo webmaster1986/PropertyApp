@@ -12,6 +12,7 @@ import ChangePasswordContainer from './ChangePasswordContainer';
 import AdminSettingsContainer from './AdminSettingsContainer';
 import SavedSearchContainer from './SavedSearchContainer';
 import SaveCityFiltersContainer from './SaveCityFiltersContainer';
+import Footer from '../components/common/Footer'
 
 const LoggedIn = ({user, actions}) => {
 
@@ -35,6 +36,7 @@ const LoggedIn = ({user, actions}) => {
                 <Route path="/savedCityFilters" component={SaveCityFiltersContainer}/>
                 <Route path="/" render={() => <Redirect to="/propertyList" />} />
             </Switch>
+            <Footer/>
         </div>
     );
 };

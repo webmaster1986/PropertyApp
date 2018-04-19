@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Footer from '../components/common/Footer';
 import AdminTabs from './common/AdminTabs';
 import '../static/scss/layout/viewProperty.css';
 import '../static/scss/layout/AdminSettings.css';
@@ -104,7 +103,6 @@ class AdminSettings extends Component {
                         </div>
                     </div>
                 </div>
-                <Footer/>
             </div>
         );
     }

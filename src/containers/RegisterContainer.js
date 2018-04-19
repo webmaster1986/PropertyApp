@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Service from '../utils/apiService';
 import Header from '../components/common/Header';
-import Footer from '../components/common/Footer';
 import Button from '../components/common/Button';
 
 class Register extends Component {
@@ -132,8 +131,6 @@ class Register extends Component {
                         <h3>You're all set.<br/>Confirm your email and you're good to go!</h3>
                     </div>
                 </main>
-
-                <Footer/>
             </div>);
         }
 
@@ -187,8 +184,6 @@ class Register extends Component {
                         </form>
                     </div>
                 </main>
-
-                <Footer/>
             </div>
         );
     }

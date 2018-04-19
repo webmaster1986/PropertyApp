@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import CONST from '../utils/CONST';
-import Footer from './common/Footer';
 import Header from './common/Header';
 import Button from './common/Button';
 import common from '../utils/common';

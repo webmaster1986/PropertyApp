@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Footer from '../components/common/Footer';
 import SavedSearchEditTabs from './common/SavedSearchEditTabs';
 import '../static/scss/layout/SavedSearch.css';
 
@@ -120,7 +119,6 @@ class SavedSearch extends Component {
                       </div>
                   </div>
               </div>
-              <Footer/>
           </div>
       );
   }

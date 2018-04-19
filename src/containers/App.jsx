@@ -5,19 +5,11 @@ import {
 import utils from '../utils/common';
 import LoggedIn from './LoggedIn';
 import LoggedOut from './LoggedOut';
-import imgBackground from '../static/images/background.png';
 import '../static/scss/style.css'
 import '../components/common/Button.css'
 
-const backGround = {
-    backgroundImage: `url(${imgBackground})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center bottom',
-    backgroundSize: '75%',
-};
-
 const App = () => (
-    <div style={{height: '100%', width: '100%', ...backGround}}>
+    <div style={{height: '100%', width: '100%' }}>
         {
             utils.isUser() ?
                 <Route path="/" component={LoggedIn} /> :

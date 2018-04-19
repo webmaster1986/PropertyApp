@@ -5,13 +5,11 @@ import thunk from 'redux-thunk';
 import reducer from '../reducers/root-reducer';
 
 const middlewares = [thunk];
-let composeEnhancers = compose;
 
 if (process.env.NODE_ENV === 'development') {
     middlewares.push(createLogger({
         collapsed: true,
     }));
-    composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; // eslint-disable-line no-underscore-dangle
 }
 
 const store = composeWithDevTools(applyMiddleware(...middlewares))(createStore)(reducer);

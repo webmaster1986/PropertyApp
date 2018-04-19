@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import CONST from '../utils/CONST';
-import Service from '../utils/apiService';
-import Footer from './common/Footer';
 import Button from './common/Button';
 
 class ChangePassword extends Component {
