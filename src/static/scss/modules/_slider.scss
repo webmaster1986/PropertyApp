@@ -1,0 +1,61 @@
+/* Slider Settings */
+
+/* Thumbnails Slider Style / Settings / Modifications */
+/* Orignal settins in vendors/thumbnailSlider/... */
+
+
+.slider{
+	padding-bottom:15px;
+	font-size: 0px;
+	color: transparent;
+}
+
+#ninja-slider .ns-img, #thumbnail-slider .thumb{
+	background-size:cover;
+}
+
+#thumbnail-slider{
+	height:498px;
+	float:left;
+}
+
+#thumbnail-slider div.inner{
+	padding:0px;
+	border-radius:0px;
+}
+
+#thumbnail-slider ul li{
+	border:none;
+	margin:0px;
+}
+
+#thumbnail-slider-prev, #thumbnail-slider-next{
+	background:none;
+}
+
+#thumbnail-slider-next::before, #thumbnail-slider-prev::before{
+	content: "\f175";
+	display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+        -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border:none;
+    font-size:30px;
+}
+
+#thumbnail-slider-next::before{
+	bottom:26px;
+}
+
+#thumbnail-slider-prev::before{
+	content: "\f176";
+}
+
+#ninja-slider div.fs-icon{
+	display:none;
+}

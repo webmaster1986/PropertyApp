@@ -1,0 +1,1615 @@
+@charset "UTF-8";
+/* All Variables */
+/* Colors  */
+/* Fonts */
+/* Container */
+/* Input colors */
+/* Responsive Breakpoints */
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */ }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+ul {
+  padding-left: 0px; }
+
+/* Base Style */
+/* Fonts */
+/* Base Style */
+a, button, .jcf-select,
+.jcf-list .jcf-option,
+.jcf-select .jcf-select-text,
+input[type="submit"],
+label:hover,
+table tr,
+.tabs li {
+  cursor: pointer;
+  transition: color .5s linear 0s;
+  -webkit-transition: color .5s linear 0s;
+  transition: background .5s linear 0s;
+  -webkit-transition: background .5s linear 0s; }
+
+html {
+  font-size: 0px;
+  color: transparent; }
+
+body {
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  color: #6A6A6A;
+  background-color: #ffffff;
+  line-height: 1.5em;
+  background: url(../images/background.png) no-repeat bottom center;
+  min-height: 100vh; }
+
+a {
+  text-decoration: none;
+  color: #2FC865; }
+  a:hover {
+    text-decoration: none; }
+
+.container {
+  margin: auto;
+  max-width: 1310px;
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.wrapper {
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 300px; }
+
+main.flex {
+  align-items: center;
+  align-items: -webkit-center;
+  height: 62vh; }
+
+.flex {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-direction: -webkit-row; }
+
+.text-center {
+  text-align: center; }
+
+.img-responsive {
+  max-width: 100%; }
+
+.btn {
+  display: inline-block; }
+
+.red-color {
+  color: #ff2525 !important; }
+
+.no-margin {
+  margin: 0px !important; }
+
+.reg-form {
+  font-size: 12px;
+  max-width: 655px;
+  margin: auto;
+  width: 100%; }
+  .reg-form h2 {
+    margin-bottom: 50px; }
+    .reg-form h2 a {
+      text-decoration: underline; }
+  .reg-form p {
+    color: #9d9d9d;
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 300; }
+  .reg-form.step-5 {
+    text-align: center;
+    max-width: 760px; }
+
+/* Header */
+header {
+  padding: 30px 0px;
+  justify-content: space-between;
+  justify-content: -webkit-space-between; }
+  header .logo {
+    font-size: 19px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    color: #2FC865;
+    padding-top: 9px; }
+  header .login p {
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 11px;
+    font-weight: 300;
+    padding-right: 15px;
+    color: #9d9d9d;
+    letter-spacing: 0.2px; }
+  header .login a {
+    float: right; }
+  header .user {
+    margin-top: -7px; }
+    header .user img {
+      margin-top: 9px;
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border: 1px solid #2FC865; }
+    header .user .dropbtn {
+      color: #6A6A6A;
+      padding: 0px 0px 14px 6px;
+      font-size: 14px;
+      font-weight: 700;
+      border: none;
+      cursor: pointer; }
+      header .user .dropbtn i {
+        margin-top: 21px;
+        margin-left: 15px;
+        color: #9d9d9d; }
+    header .user .dropdown {
+      position: relative;
+      display: inline-block; }
+    header .user .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fcfcfc;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border: 2px solid #f4f4f4;
+      z-index: 1;
+      right: 15px;
+      margin-top: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    header .user .dropdown-content a {
+      color: #9d9d9d;
+      padding: 2px 15px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+      float: none; }
+      header .user .dropdown-content a:hover {
+        color: #2FC865; }
+    header .user .show {
+      display: block; }
+
+/* Footer style */
+footer {
+  -webkit-justify-content: space-between;
+  /* Safari */
+  justify-content: space-between; }
+  footer ul li {
+    display: inline-block; }
+    footer ul li a {
+      color: #9d9d9d; }
+  footer ul.social-icons li {
+    margin-right: 20px; }
+    footer ul.social-icons li a:hover {
+      color: #6A6A6A; }
+  footer ul.footer-links li {
+    margin-left: 10px; }
+    footer ul.footer-links li a {
+      font-size: 14px; }
+      footer ul.footer-links li a:hover {
+        color: #2FC865;
+        text-decoration: underline; }
+  footer.reg-footer {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    /*height: 23vh;*/ }
+
+/* Typography */
+p {
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  color: #6A6A6A;
+  line-height: 1.5em; }
+
+h2 {
+  color: #2FC865;
+  font-family: "Roboto Slab", serif;
+  font-size: 41px;
+  line-height: 40px;
+  font-weight: 700;
+  margin: 0px;
+  letter-spacing: 1px; }
+
+h3 {
+  color: #2FC865;
+  font-family: "Roboto Slab", serif;
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 700;
+  margin: 0px;
+  letter-spacing: 0.5px;
+  line-height: 44px; }
+
+h6 {
+  color: #2FC865;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  margin: 0px;
+  letter-spacing: 0.5px;
+  line-height: 25px; }
+
+/* Buttons */
+.primary-btn {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Roboto", serif;
+  border: none;
+  outline: none;
+  letter-spacing: 1px;
+  padding: 8px 26px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  background: #2FC865;
+  text-align: center; }
+  .primary-btn.medium-btn {
+    padding: 15px 45px; }
+  .primary-btn:hover {
+    background: #259f50; }
+  .primary-btn i.fa {
+    margin-left: 14px; }
+
+.primary-btn-outline {
+  color: #2FC865;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Roboto", serif;
+  outline: none;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  background: #ffffff;
+  border: 1px solid #2FC865; }
+  .primary-btn-outline.medium-btn {
+    padding: 15px 45px; }
+  .primary-btn-outline:hover {
+    background: #2FC865;
+    color: #ffffff; }
+  .primary-btn-outline i.fa {
+    margin-left: 14px; }
+  .primary-btn-outline.icon-only {
+    padding: 8px 60px; }
+    .primary-btn-outline.icon-only i.fa {
+      margin-left: 0px; }
+
+/* Global Components */
+/* Labels */
+label {
+  font-size: 23px;
+  display: block;
+  font-weight: 300; }
+  label.small {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #9d9d9d; }
+
+label.default {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px; }
+
+/* Inputs */
+input[type="text"], input[type="password"], input[type="email"] {
+  color: #6A6A6A;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Roboto", serif;
+  width: 100%;
+  height: 60px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  outline: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border: 2px solid #f4f4f4;
+  background: #f9f9f9; }
+
+input[type="text"].small {
+  background: #ffffff;
+  height: 50px;
+  font-weight: 400;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* Radio Button */
+.radio-group {
+  margin-top: 10px; }
+  .radio-group input[type="radio"], .radio-group .jcf-radio {
+    display: none; }
+  .radio-group label {
+    color: #6A6A6A;
+    background: #f2f2f2;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 0px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #e9e9e9; }
+    .radio-group label:first-child {
+      border-radius: 3px 0px 0px 3px; }
+    .radio-group label:first-child {
+      border-radius: 0px 3px 3px 0px; }
+  .radio-group input[type="radio"]:checked + label, .radio-group .jcf-checked + label, .radio-group label:hover {
+    background: #2FC865;
+    color: #ffffff; }
+
+/* Placeholder */
+input[type="text"]::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #dadada; }
+
+input[type="text"]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #dadada; }
+
+input[type="text"]:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #dadada; }
+
+input[type="text"]:-moz-placeholder {
+  /* Firefox 18- */
+  color: #dadada; }
+
+/* Select  */
+.jcf-select {
+  min-width: auto;
+  padding: 4px 8px;
+  height: 35px;
+  background: #ffffff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border: 2px solid #f4f4f4; }
+  .jcf-select .jcf-select-drop {
+    width: auto !important; }
+  .jcf-select .jcf-select-text {
+    color: #6A6A6A;
+    font-size: 14px;
+    font-weight: 400; }
+
+/* Finder Filter */
+.options-filter {
+  padding: 16px 25px 10px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border: 2px solid #f4f4f4;
+  background: #f9f9f9;
+  margin-top: 26px;
+  -webkit-justify-content: space-between;
+  /* Safari */
+  justify-content: space-between;
+  position: relative;
+  /* Location */
+  /* End Location */
+  /* Filter Content */
+  /* End Filter */
+  /* Mortgage */
+  /* End  Mortgage */ }
+  .options-filter > div {
+    border-left: 1px solid #e9e9e9;
+    padding-left: 25px; }
+    .options-filter > div:first-child {
+      border-left: none;
+      padding-left: 0px;
+      min-width: 145px; }
+    .options-filter > div:last-child {
+      min-width: 397px; }
+    .options-filter > div strong {
+      color: #6A6A6A;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 0.4px; }
+    .options-filter > div p {
+      color: #9d9d9d;
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0px;
+      margin-top: 5px;
+      cursor: pointer; }
+      .options-filter > div p:after {
+        content: "\f107";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin-top: -3px;
+        margin-left: 76px;
+        font-size: 22px;
+        float: right; }
+  .options-filter .location .jcf-select {
+    display: block;
+    border: none;
+    background: none; }
+  .options-filter .location select {
+    display: block; }
+  .options-filter .location .jcf-select .jcf-select-drop {
+    width: 200px !important; }
+  .options-filter .location .jcf-scrollable-wrapper {
+    width: 196px !important; }
+  .options-filter .location .jcf-select .jcf-select-text {
+    color: #9d9d9d;
+    font-size: 14px;
+    font-weight: 400; }
+  .options-filter .filters {
+    /* End Filter Content */ }
+    .options-filter .filters .filter-content {
+      background: #fcfcfc;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-left: 2px solid #f4f4f4;
+      border-right: 2px solid #f4f4f4;
+      border-bottom: 2px solid #f4f4f4;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+      padding: 5px 25px;
+      position: absolute;
+      margin-top: 25px;
+      right: 0px;
+      width: 424px;
+      display: none; }
+      .options-filter .filters .filter-content ul.fileter-content-ul > li {
+        display: block;
+        padding-bottom: 10px; }
+        .options-filter .filters .filter-content ul.fileter-content-ul > li label {
+          display: block;
+          width: 100%; }
+        .options-filter .filters .filter-content ul.fileter-content-ul > li div.flex {
+          -webkit-align-items: baseline;
+          /* Safari */
+          align-items: baseline; }
+          .options-filter .filters .filter-content ul.fileter-content-ul > li div.flex > div {
+            padding: 0px 10px; }
+        .options-filter .filters .filter-content ul.fileter-content-ul > li input[type="submit"] {
+          float: right;
+          margin-top: 10px; }
+      .options-filter .filters .filter-content ul.fileter-content-ul > li.half {
+        display: inline-block;
+        width: 46%;
+        float: left; }
+        .options-filter .filters .filter-content ul.fileter-content-ul > li.half.last {
+          margin-left: 8%; }
+      .options-filter .filters .filter-content ul.fileter-content-ul:after {
+        clear: both;
+        content: '';
+        display: block; }
+      .options-filter .filters .filter-content .jcf-select {
+        position: relative; }
+  .options-filter .mortgage .mortgage-options {
+    background: #fcfcfc;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-left: 2px solid #f4f4f4;
+    border-right: 2px solid #f4f4f4;
+    border-bottom: 2px solid #f4f4f4;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+    padding: 5px 25px;
+    position: absolute;
+    margin-top: 25px;
+    width: 380px;
+    margin-left: -27px;
+    display: none; }
+    .options-filter .mortgage .mortgage-options input[type="submit"] {
+      float: right;
+      margin-bottom: 10px; }
+    .options-filter .mortgage .mortgage-options form {
+      position: relative; }
+    .options-filter .mortgage .mortgage-options .placeholder-txt {
+      position: absolute;
+      right: 10px;
+      top: 38px;
+      color: #dadada; }
+    .options-filter .mortgage .mortgage-options:after {
+      clear: both;
+      content: '';
+      display: block; }
+
+/* End Option Filter */
+/* Location dropdown / Customized JCF plugin style */
+.jcf-select .jcf-select-opener:after {
+  content: "\f107";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: -22px;
+  font-size: 22px;
+  float: right;
+  color: #9d9d9d; }
+
+.jcf-select-drop .jcf-select-drop-content {
+  background: #fcfcfc;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border: 2px solid #f4f4f4;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08); }
+
+.jcf-list .jcf-option {
+  color: #9d9d9d;
+  padding: 2px 15px;
+  text-decoration: none;
+  font-size: 14px; }
+  .jcf-list .jcf-option:hover {
+    color: #2FC865; }
+
+.jcf-scrollbar-vertical {
+  background: #efefef;
+  width: 9px; }
+  .jcf-scrollbar-vertical .jcf-scrollbar-handle {
+    background: #dbdbdb;
+    border-radius: 50px;
+    width: 5px;
+    margin-left: 3px; }
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border: 2px solid #f4f4f4;
+  /* tr */
+  /* table-small */
+  /* table-hover */
+  /* table-striped */ }
+  .table tr {
+    cursor: default; }
+    .table tr th {
+      font-family: "Roboto Slab", serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: #6A6A6A;
+      padding: 17px 15px;
+      text-align: center; }
+      .table tr th:first-child {
+        text-align: left; }
+      .table tr th:last-child {
+        text-align: right; }
+    .table tr td {
+      font-size: 15px;
+      font-weight: 400;
+      color: #9d9d9d;
+      padding: 17px 15px;
+      text-align: center;
+      border-top: 2px solid #f4f4f4; }
+      .table tr td:first-child {
+        text-align: left; }
+      .table tr td:last-child {
+        text-align: right; }
+  .table.table-small td {
+    font-size: 15px;
+    padding: 5px 15px; }
+  .table.table-hover {
+    /* thead */ }
+    .table.table-hover tr:hover {
+      background: #2FC865 !important;
+      color: #ffffff; }
+      .table.table-hover tr:hover td {
+        color: inherit; }
+    .table.table-hover thead {
+      background: #f5f5f5; }
+      .table.table-hover thead tr:hover {
+        background: #f5f5f5 !important; }
+  .table.table-striped tr:nth-child(even) {
+    background: #fcfcfc; }
+
+/* Slider Settings */
+/* Thumbnails Slider Style / Settings / Modifications */
+/* Orignal settins in vendors/thumbnailSlider/... */
+.slider {
+  padding-bottom: 15px;
+  font-size: 0px;
+  color: transparent; }
+
+#ninja-slider .ns-img, #thumbnail-slider .thumb {
+  background-size: cover; }
+
+#thumbnail-slider {
+  height: 498px;
+  float: left; }
+
+#thumbnail-slider div.inner {
+  padding: 0px;
+  border-radius: 0px; }
+
+#thumbnail-slider ul li {
+  border: none;
+  margin: 0px; }
+
+#thumbnail-slider-prev, #thumbnail-slider-next {
+  background: none; }
+
+#thumbnail-slider-next::before, #thumbnail-slider-prev::before {
+  content: "\f175";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  border: none;
+  font-size: 30px; }
+
+#thumbnail-slider-next::before {
+  bottom: 26px; }
+
+#thumbnail-slider-prev::before {
+  content: "\f176"; }
+
+#ninja-slider div.fs-icon {
+  display: none; }
+
+/* Contetn Area Style*/
+.content {
+  padding: 30px 30px;
+  margin-top: 60px;
+  background: #ffffff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border: 2px solid #f4f4f4;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08); }
+
+/*** Main Page ***/
+/* House Model Result */
+.house-model-result .location-half .data-location {
+  color: #2FC865;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif; }
+  .house-model-result .location-half .data-location i.fa {
+    margin-right: 10px; }
+  .house-model-result .location-half .data-location span {
+    color: #6A6A6A;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto", serif;
+    display: inline-block;
+    padding-left: 6px;
+    vertical-align: top;
+    padding-top: 5px;
+    letter-spacing: 0.6px; }
+
+.house-model-result .location-half .data-img {
+  padding-top: 18px; }
+  .house-model-result .location-half .data-img img {
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px; }
+
+.house-model-result .cash-half {
+  padding-left: 25px; }
+  .house-model-result .cash-half .data-title {
+    color: #6A6A6A;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+    padding-top: 6px;
+    letter-spacing: 0.1px; }
+  .house-model-result .cash-half .data-percentage {
+    color: #2FC865;
+    font-size: 67px;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 21px;
+    line-height: 60px; }
+  .house-model-result .cash-half p {
+    color: #9d9d9d;
+    line-height: 21px;
+    font-weight: 400; }
+  .house-model-result .cash-half a.btn {
+    margin-top: 5px;
+    display: inline-block; }
+
+/* Result Table */
+.data-table {
+  padding-top: 37px; }
+
+/*** Properties List Edit Mode ***/
+.edit-header {
+  -webkit-justify-content: space-between;
+  /* Safari */
+  justify-content: space-between;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 18px;
+  border-bottom: 2px solid #f4f4f4; }
+
+.mortgage-title {
+  color: #6A6A6A;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif; }
+  .mortgage-title span {
+    color: #6A6A6A;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Roboto", serif;
+    display: inline-block;
+    padding-left: 13px;
+    vertical-align: top;
+    padding-top: 5px;
+    letter-spacing: 0.6px; }
+
+/* End Header */
+/* Caclulator */
+.mortgage-calculator {
+  padding: 25px 0px;
+  -webkit-align-items: center;
+  /* Safari */
+  align-items: center;
+  -webkit-justify-content: space-between;
+  /* Safari */
+  justify-content: space-between; }
+  .mortgage-calculator h3 {
+    width: 40%;
+    text-align: center;
+    font-family: "Roboto", serif;
+    color: #6A6A6A; }
+  .mortgage-calculator table {
+    width: 60%; }
+    .mortgage-calculator table tr td:last-child {
+      font-weight: 700;
+      color: #6A6A6A; }
+    .mortgage-calculator table tr:last-child td {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #6A6A6A; }
+
+/* End Calculator */
+/* Cash on Cash Return */
+.coc-return {
+  margin-left: -30px;
+  margin-right: -30px;
+  padding: 60px 30px;
+  padding-left: 60px;
+  text-align: center;
+  background: #f9f9f9;
+  border-top: 2px solid #f4f4f4;
+  -webkit-justify-content: space-between;
+  /* Safari */
+  justify-content: space-between;
+  -webkit-align-items: center;
+  /* Safari */
+  align-items: center; }
+  .coc-return h6 {
+    color: #9d9d9d; }
+  .coc-return strong {
+    color: #2FC865;
+    font-size: 43px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-top: 32px;
+    display: block; }
+    .coc-return strong span {
+      font-size: 21px;
+      float: left;
+      margin-top: -6px; }
+    .coc-return strong .month {
+      font-weight: 300;
+      color: #6A6A6A;
+      font-size: 16px; }
+  .coc-return .coc-minus, .coc-return .coc-equal, .coc-return coc-plus {
+    color: #6A6A6A;
+    margin-top: 23px; }
+  .coc-return .coc-minus:before {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 5px;
+    border-radius: 10px;
+    background: #6A6A6A; }
+  .coc-return .coc-plus:before {
+    content: '+';
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: #6A6A6A; }
+  .coc-return .coc-equal:before {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 6px;
+    margin-bottom: 10px;
+    background: #6A6A6A; }
+  .coc-return .coc-equal:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 6px;
+    background: #6A6A6A; }
+  .coc-return .total-coc-percentage {
+    color: #ffffff;
+    font-size: 31px;
+    font-weight: 700;
+    font-family: "Roboto", serif;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    padding: 18px 32px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background: #2FC865; }
+  .coc-return.v2 {
+    border-top: none; }
+    .coc-return.v2 strong {
+      color: #6A6A6A; }
+
+/* Cash on Cash Return */
+.edit-tabs {
+  padding: 32px 30px;
+  margin-left: -30px;
+  margin-right: -30px;
+  border: 2px solid #f4f4f4;
+  -webkit-justify-content: space-between;
+  /* Safari */
+  justify-content: space-between;
+  /* .tabs*/
+  /* Tabs Data */
+  /* tabs-data */ }
+  .edit-tabs .tabs {
+    border-top: 2px solid #f4f4f4;
+    margin-top: 0px;
+    min-width: 30.5%; }
+    .edit-tabs .tabs li {
+      display: block;
+      color: #6A6A6A;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 12px 15px;
+      cursor: pointer;
+      border-bottom: 2px solid #f4f4f4;
+      border-left: 2px solid #f4f4f4; }
+      .edit-tabs .tabs li:hover, .edit-tabs .tabs li.active {
+        background: #f9f9f9; }
+  .edit-tabs .tabs-data {
+    border: 2px solid #f4f4f4;
+    width: 100%;
+    padding: 25px 25px;
+    /* table */ }
+    .edit-tabs .tabs-data table {
+      /* td */
+      /* tr */ }
+      .edit-tabs .tabs-data table td i {
+        border-left: 2px solid #f4f4f4;
+        border-right: 2px solid #f4f4f4;
+        font-style: normal;
+        padding: 6px 13px;
+        margin: -6px 0px;
+        float: right; }
+      .edit-tabs .tabs-data table td i.fa {
+        border: none;
+        font-style: normal;
+        padding: 6px 6px;
+        margin: 0px;
+        float: none;
+        color: #6A6A6A; }
+      .edit-tabs .tabs-data table tr td:last-child {
+        font-weight: 700;
+        color: #6A6A6A; }
+      .edit-tabs .tabs-data table tr:last-child td:last-child {
+        color: #2FC865; }
+    .edit-tabs .tabs-data .tab-data {
+      display: none; }
+    .edit-tabs .tabs-data #tab-data-1 {
+      display: block; }
+    .edit-tabs .tabs-data .coc-tab {
+      padding-top: 17px;
+      text-align: center;
+      padding-right: 50px;
+      -webkit-justify-content: space-between;
+      /* Safari */
+      justify-content: space-between;
+      -webkit-align-items: center;
+      /* Safari */
+      align-items: center; }
+      .edit-tabs .tabs-data .coc-tab p {
+        margin: 0px;
+        padding: 8px 0px;
+        font-size: 15px;
+        letter-spacing: 0.2px;
+        font-weight: 700; }
+        .edit-tabs .tabs-data .coc-tab p span {
+          font-weight: 300;
+          font-size: 14px;
+          display: block; }
+      .edit-tabs .tabs-data .coc-tab hr {
+        margin: 0px;
+        border: none;
+        border-bottom: solid 1px #6A6A6A; }
+      .edit-tabs .tabs-data .coc-tab .total-coc-percentage {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Roboto", serif;
+        border: none;
+        outline: none;
+        letter-spacing: 1px;
+        padding: 16px 32px;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        background: #2FC865; }
+      .edit-tabs .tabs-data .coc-tab .total-coc {
+        margin-top: 30px; }
+
+/* edit-tabs */
+.data-details {
+  /* detail-header */ }
+  .data-details .details-header {
+    padding: 30px 0px;
+    -webkit-align-items: center;
+    /* Safari */
+    align-items: center;
+    -webkit-justify-content: space-between;
+    /* Safari */
+    justify-content: space-between;
+    /* details title / .mortgage-title */ }
+    .data-details .details-header .mortgage-title ul {
+      margin: 0px;
+      margin-top: 10px; }
+      .data-details .details-header .mortgage-title ul li {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Roboto", serif;
+        color: #6A6A6A;
+        list-style-type: none;
+        padding-right: 20px; }
+        .data-details .details-header .mortgage-title ul li strong {
+          display: inline-block;
+          padding-right: 3px; }
+        .data-details .details-header .mortgage-title ul li:after {
+          content: '•';
+          color: #9d9d9d;
+          font-size: 24px;
+          float: right;
+          margin-left: 20px;
+          margin-top: 3px; }
+        .data-details .details-header .mortgage-title ul li:last-child:after {
+          display: none; }
+    .data-details .details-header .details-price {
+      font-size: 43px;
+      letter-spacing: 1px;
+      font-weight: 700;
+      line-height: 35px;
+      display: block;
+      color: #6A6A6A;
+      text-align: center;
+      padding: 10px 0px;
+      padding-left: 30px;
+      border-left: 1px solid #f4f4f4; }
+  .data-details.v2 .details-header .mortgage-title span {
+    display: block;
+    padding-left: 0px; }
+  .data-details.v2 .details-header ul {
+    margin: 0px;
+    margin-top: 10px; }
+    .data-details.v2 .details-header ul li {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: "Roboto", serif;
+      color: #6A6A6A;
+      list-style-type: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+      border-left: 1px solid #f4f4f4; }
+      .data-details.v2 .details-header ul li strong {
+        display: block;
+        padding-right: 3px; }
+  .data-details.v2 .details-price {
+    color: #2FC865; }
+
+/* data-details */
+.content-list {
+  -webkit-justify-content: space-between;
+  /* Safari */
+  justify-content: space-between;
+  font-size: 17px; }
+  .content-list ul {
+    padding: 20px 0px;
+    display: block;
+    width: 100%; }
+    .content-list ul li {
+      display: block;
+      margin-bottom: 15px; }
+      .content-list ul li strong {
+        text-align: right;
+        float: right; }
+    .content-list ul:first-child {
+      padding-right: 20px;
+      border-right: 1px solid #f4f4f4; }
+    .content-list ul:last-child {
+      padding-left: 20px; }
+
+/* Content List */
+.heading {
+  color: #6A6A6A;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: "Roboto Slab", serif; }
+
+.property-details {
+  border: 2px solid #f4f4f4;
+  border-bottom: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px; }
+  .property-details li {
+    display: block;
+    min-height: 56px;
+    padding: 15px 20px;
+    border-bottom: 2px solid #f4f4f4; }
+    .property-details li div.list-item {
+      font-size: 12px;
+      line-height: 18px; }
+      .property-details li div.list-item:before {
+        content: '•';
+        display: inline-block;
+        font-size: 13px;
+        margin-right: 5px; }
+    .property-details li:nth-child(odd) {
+      background: #fcfcfc; }
+
+@media (max-width: 767px) {
+  .flex {
+    flex-direction: column;
+    flex-direction: -webkit-column; }
+  header.flex, .options-filter .filters .filter-content ul.fileter-content-ul > li div.flex, .user, footer, .data-details.v2 .details-header ul {
+    flex-direction: row !important;
+    flex-direction: -webkit-row !important; }
+  .wrapper {
+    padding-bottom: 50px; }
+  h2 {
+    font-size: 26px; }
+  header {
+    padding-bottom: 0px; }
+    header .logo {
+      text-align: center; }
+    header .login {
+      text-align: right; }
+      header .login p {
+        display: none; }
+  .reg-form h2 {
+    margin-bottom: 25px; }
+  .reg-form label {
+    font-size: 20px;
+    margin-bottom: 15px; }
+  .options-filter > div {
+    padding-left: 0px;
+    border: none;
+    margin-bottom: 25px; }
+  .options-filter .mortgage .mortgage-options, .options-filter .filters .filter-content {
+    width: 100%; }
+  .options-filter > div:last-child {
+    min-width: 100%; }
+  .options-filter .location .jcf-select {
+    position: relative; }
+  .options-filter > div p:after {
+    margin-left: 10px; }
+  .location .jcf-select .jcf-select-opener:after {
+    margin-right: -9px; }
+  .options-filter .filters .filter-content, .options-filter .mortgage .mortgage-options {
+    padding: 5px 10px; }
+  .data-table {
+    padding-top: 37px;
+    width: calc(100% + 45px);
+    overflow: scroll; }
+    .data-table table {
+      min-width: 750px; }
+  .house-model-result .cash-half {
+    padding-left: 0px; }
+  .house-model-result .cash-half .data-percentage {
+    font-size: 45px;
+    line-height: 40px; }
+  footer ul.social-icons li {
+    margin-right: 10px; }
+  .mortgage-calculator h3 {
+    width: 100%;
+    font-size: 24px; }
+    .mortgage-calculator h3 br {
+      display: none; }
+  .mortgage-calculator table {
+    width: 100%; }
+  .coc-return {
+    padding: 30px 30px; }
+  .coc-return h6 {
+    margin-top: 30px; }
+  .edit-tabs .tabs-data {
+    padding: 0px; }
+  .mortgage-title span {
+    padding-left: 0px; }
+  .data-details .details-header .details-price {
+    padding-left: 0px;
+    border: none;
+    margin-top: 25px; }
+  .data-details .details-header .mortgage-title ul li:after {
+    display: none; }
+  #ninja-slider {
+    width: 100%; }
+  #thumbnail-slider {
+    display: none; }
+  .edit-tabs .tabs li {
+    border-right: 2px solid #f4f4f4; }
+  .edit-tabs .tabs-data .coc-tab {
+    padding-right: 0px; }
+  .edit-tabs .tabs-data .coc-tab .total-coc-percentage {
+    margin-bottom: 0px; }
+  .edit-header a {
+    margin-top: 25px; } }
+
+@media (max-width: 400px) {
+  header .logo {
+    font-size: 16px; }
+  .jcf-select {
+    padding: 4px 4px; }
+  header .user .dropbtn {
+    font-size: 12px; }
+  header .user .dropbtn i {
+    margin-left: 5px; }
+  footer.flex {
+    flex-direction: column !important;
+    flex-direction: -webkit-column !important; }
+  footer ul {
+    margin-top: 0px; }
+  footer ul.footer-links li, footer ul.social-icons li {
+    margin-left: 0px;
+    margin-right: 20px; }
+  .mortgage-calculator {
+    margin-left: -30px;
+    margin-right: -30px; }
+  .edit-tabs {
+    padding-left: 0px;
+    padding-right: 0px;
+    border: none; }
+  footer.reg-footer {
+    -webkit-align-items: start;
+    align-items: start;
+    margin-top: 16vh;
+    height: auto; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    padding-bottom: 150px; }
+  .options-filter {
+    flex-direction: column;
+    flex-direction: -webkit-column; }
+  .options-filter > div {
+    padding-left: 0px;
+    border: none;
+    margin-bottom: 25px; }
+  .options-filter .mortgage .mortgage-options, .options-filter .filters .filter-content {
+    width: 100%; }
+  .options-filter > div:last-child {
+    min-width: 100%; }
+  .options-filter .location .jcf-select {
+    position: relative; }
+  .options-filter > div p:after {
+    margin-left: 10px; }
+  .location .jcf-select .jcf-select-opener:after {
+    margin-right: -9px; }
+  .data-table {
+    padding-top: 37px;
+    width: calc(100% + 45px);
+    overflow: scroll; }
+    .data-table table {
+      min-width: 850px; }
+  #thumbnail-slider {
+    height: 328px; } }
+
+@media (min-width: 1200px) {
+  .location-half {
+    min-width: 500px; } }

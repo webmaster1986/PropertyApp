@@ -1,0 +1,21 @@
+.button-style {
+  height: 40px;
+  width: 90px;
+  border-radius: 2px;
+  background-color: #2FC865;
+
+  p {
+    color: #fff !important;
+    font-weight: 500;
+    line-height: 19px;
+    margin-left: -8px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+}

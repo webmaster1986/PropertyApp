@@ -1,0 +1,46 @@
+.saved-search {
+  .edit-mode {
+    .edit-tabs {
+      border: none;
+      .tab-data {
+        .city-list {
+          .city-name {
+            display: inline-block;
+            padding: 12px 0px;
+          }
+        }
+      }
+    }
+    table.table.table-small {
+      tbody {
+        tr{
+          td:last-child {
+            text-align: left;
+          }
+        }
+      }
+    }
+    .tab-data {
+      a.primary-btn {
+        float:right;
+        margin-bottom: 10px;
+      }
+    }
+    .city-info {
+      width: 100%;
+      display: inline-block;
+
+      input[type=text] {
+        width: 100%;
+        margin: 10px 0;
+        text-align: left;
+        padding: 20px 10px;
+      }
+    }
+  }
+  .saveBtn {
+    padding: 0 22px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+}

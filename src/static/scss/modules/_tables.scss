@@ -1,0 +1,111 @@
+/* Table Styles */
+
+
+
+.table{
+	width:100%;
+	border-collapse: collapse;
+	background:$bg-white;
+	@include border-radius();
+	@include add-border(2px, $border-color ,"all");
+
+
+	tr{
+		cursor:default;
+
+		th{
+			font-family:$secondary-font;
+			font-size:19px;
+			font-weight:700;
+			color:$primary-color;
+			padding:17px 15px;
+			text-align:center;
+
+				&:first-child{
+					text-align:left;
+				}
+
+				&:last-child{
+					text-align:right;
+				}
+		}
+
+		td{
+			font-size:15px;
+			font-weight:400;
+			color:$light-gray;
+			padding:17px 15px;
+			text-align:center;
+			@include add-border(2px, $border-color ,"top");
+
+				&:first-child{
+					text-align:left;
+				}
+
+				&:last-child{
+					text-align:right;
+				}
+		}
+
+
+
+
+	}/* tr */
+
+
+		&.table-small{
+
+			td{
+				font-size:15px;
+				padding:5px 15px;
+			}
+
+		}/* table-small */
+
+
+		&.table-hover{
+
+			tr:hover{
+				background:$secondary-color !important;
+				color:$lighten-color;
+
+				td{
+					color:inherit;
+				}
+			}
+
+
+			thead{
+				background:$bg-table-header;
+
+				tr{
+
+					&:hover{
+						background:$bg-table-header !important;
+					}
+				}
+			}/* thead */	
+
+		}/* table-hover */
+
+
+
+		&.table-striped{
+
+			tr{
+
+				&:nth-child(even){
+					background:$bg-darken;
+				}
+
+			}
+
+		}/* table-striped */
+
+
+
+}
+
+
+
+

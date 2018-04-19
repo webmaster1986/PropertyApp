@@ -1,0 +1,293 @@
+@media (max-width:$max-mobile){
+	
+
+	.flex{
+		flex-direction: column;
+    	flex-direction: -webkit-column;
+	}
+
+	header.flex, .options-filter .filters .filter-content ul.fileter-content-ul > li div.flex, .user, footer, .data-details.v2 .details-header ul{
+		flex-direction: row !important;
+    	flex-direction: -webkit-row !important;
+	}
+
+	.wrapper{
+		padding-bottom:50px;
+	}
+
+	h2{
+		font-size:26px;
+	}
+
+	header{
+		padding-bottom:0px;
+
+		.logo{
+			text-align:center;
+		}
+
+		.login{
+			text-align:right;
+
+			p{
+				display:none;
+			}
+		}	
+	}
+
+	.reg-form{
+
+		h2{
+			margin-bottom:25px;
+		}
+
+		label{
+			font-size:20px;
+			margin-bottom:15px;		
+		}
+
+	}
+
+
+	.options-filter > div{
+		padding-left:0px;
+		border:none;
+		margin-bottom:25px;
+	}
+
+	.options-filter .mortgage .mortgage-options, .options-filter .filters .filter-content{
+		width:100%;
+	}
+
+	.options-filter > div:last-child{
+		min-width:100%;
+	}
+
+	.options-filter .location .jcf-select{
+		position:relative;
+	}
+
+	.options-filter > div p:after{
+		margin-left:10px;
+	}
+
+	.location .jcf-select .jcf-select-opener:after{
+		margin-right:-9px;
+	}
+
+	.options-filter .filters .filter-content, .options-filter .mortgage .mortgage-options{
+		padding:5px 10px;
+	}
+
+	.data-table{
+		padding-top:37px;
+		width: calc(100% + 45px);
+	    overflow: scroll;
+
+	    table{
+	    	min-width: 750px;
+	    }
+	}
+
+	.house-model-result .cash-half{
+		padding-left:0px;
+	}
+
+	.house-model-result .cash-half .data-percentage{
+		font-size:45px;
+		line-height:40px;
+	}
+
+	footer ul.social-icons li{
+		margin-right:10px;
+	}
+
+	.mortgage-calculator h3{
+		width:100%;
+		font-size:24px;
+
+		br{
+			display:none;
+		}
+	}
+
+	.mortgage-calculator table{
+		width:100%;
+	}
+
+	.coc-return{
+		padding:30px 30px;
+	}
+
+	.coc-return h6{
+		margin-top:30px;
+	}
+
+	.edit-tabs .tabs-data{
+		padding:0px;
+	}
+
+	.mortgage-title span{
+		padding-left:0px;
+	}
+
+	.data-details .details-header .details-price{
+		padding-left:0px;
+		border:none;
+		margin-top:25px;
+	}
+
+	.data-details .details-header .mortgage-title ul li:after{
+		display:none;
+	}
+
+	#ninja-slider{
+		width:100%;
+	}
+
+	#thumbnail-slider{
+		display:none;
+	}
+
+	.edit-tabs .tabs li{
+		border-right: 2px solid $border-color;
+	}
+
+	.edit-tabs .tabs-data .coc-tab{
+		padding-right:0px;
+	}
+
+	.edit-tabs .tabs-data .coc-tab .total-coc-percentage{
+		margin-bottom:0px;
+	}
+
+	.edit-header a{
+		margin-top:25px;
+	}
+
+
+
+}
+
+@media (max-width:$max-mobile-small){
+	
+	header .logo{
+		font-size:16px;
+	}
+
+	.jcf-select{
+		padding:4px 4px;
+	}
+
+	header .user .dropbtn{
+		font-size:12px;
+	}
+
+	header .user .dropbtn i{
+		margin-left:5px;
+	}
+
+	footer.flex{
+		flex-direction: column !important;
+    	flex-direction: -webkit-column !important;
+	}
+
+	footer ul{
+		margin-top:0px;
+	}
+
+	footer ul.footer-links li, footer ul.social-icons li{
+		margin-left:0px;
+		margin-right:20px;
+	}
+
+	.mortgage-calculator{
+		margin-left:-30px;
+		margin-right:-30px;
+	}
+
+	.edit-tabs{
+		padding-left:0px;
+		padding-right:0px;
+		border:none;
+	}
+
+	footer.reg-footer{
+	    -webkit-align-items: start;
+	    align-items: start;
+	    margin-top: 16vh;
+	    height:auto;
+	}
+}
+
+
+@media (min-width:$min-tablet) and (max-width:$max-tablet){
+	
+	.wrapper{
+		padding-bottom:150px;
+	}
+
+	.options-filter{
+		flex-direction: column;
+    	flex-direction: -webkit-column;
+	}
+
+	.options-filter > div{
+		padding-left:0px;
+		border:none;
+		margin-bottom:25px;
+	}
+
+	.options-filter .mortgage .mortgage-options, .options-filter .filters .filter-content{
+		width:100%;
+	}
+
+	.options-filter > div:last-child{
+		min-width:100%;
+	}
+
+	.options-filter .location .jcf-select{
+		position:relative;
+	}
+
+	.options-filter > div p:after{
+		margin-left:10px;
+	}
+
+	.location .jcf-select .jcf-select-opener:after{
+		margin-right:-9px;
+	}
+
+
+	.data-table{
+		padding-top:37px;
+		width: calc(100% + 45px);
+	    overflow: scroll;
+
+	    table{
+	    	min-width: 850px;
+	    }
+	}
+
+	#thumbnail-slider{
+		height:328px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:$desktop-only){
+	.location-half{
+		min-width:500px;
+	}
+}

@@ -1,0 +1,9 @@
+.options-filter {
+    .jcf-select {
+        //is too broad of a rule, should apply to just city select but applies to filters too
+        // padding-left: 0;
+    }
+    .jcf-list ul {
+        padding: 10px;
+    }
+}

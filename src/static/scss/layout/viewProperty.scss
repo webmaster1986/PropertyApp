@@ -1,0 +1,88 @@
+.view-property {
+  .wrapper {
+    .imgLogo {
+      height: 25px;
+    }
+    .data-details.v2 {
+      .mortgage-title {
+        span {
+          display: inline;
+          vertical-align: 0;
+        }
+      }
+    }
+    .edit-mode {
+      input[type=text] {
+        height: 15px;
+        margin: 0;
+        background: #fff;
+        border: solid 1px #e0e0e0;
+        width: 125px;
+        padding: 20px 5px 20px 0px;
+        float: right;
+        text-align: right;
+      }
+      .hide {
+        display: none;
+      }
+      .coc-return strong span {
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+      }
+      .coc-options.tableFilter {
+        position: relative;
+
+        .jcf-select {
+          background: transparent;
+          border: none;
+          width: 240px !important;
+
+          .jcf-select-text , .jcf-option{
+            color: #9d9d9d;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+          }
+          .jcf-option {
+            font-size: 18px;
+          }
+          .jcf-select-drop {
+            top: 40px;
+          }
+        }
+
+        strong {
+          margin-top: 10px;
+        }
+
+        hr {
+          border: solid 2px;
+          margin-top: 45px;
+        }
+      }
+      .table.table-small {
+        td {
+          line-height: 42px;
+        }
+      }
+    }
+    .coc-options {
+      &.totalInvestment {
+        strong {
+          margin-top: 10px;
+        }
+        span {
+          color: #2FC865;
+          font-size: 22px;
+        }
+      }
+    }
+    .coc-minus.devide {
+      transform: rotate(120deg);
+    }
+    .content {
+      margin-top: 0;
+    }
+  }
+}

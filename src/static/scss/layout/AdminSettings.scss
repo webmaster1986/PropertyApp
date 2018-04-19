@@ -1,0 +1,33 @@
+.admin-settings {
+  .edit-mode {
+    .edit-tabs {
+      border: none;
+    }
+    table.table.table-small {
+      tbody {
+        tr{
+          td:last-child {
+            text-align: left;
+          }
+        }
+      }
+    }
+    .tab-data {
+        a.primary-btn {
+          float:right;
+          margin-bottom: 10px;
+        }
+    }
+    .city-info {
+      width: 100%;
+      display: inline-block;
+
+      input[type=text] {
+        width: 100%;
+        margin: 10px 0;
+        text-align: left;
+        padding: 20px 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,265 @@
+/* Finder Filter */
+
+.options-filter{
+	padding:16px 25px 10px;
+	@include border-radius();
+	@include add-border(2px, $border-color ,"all");
+	background: $bg-lighten;
+	margin-top:26px;
+  	-webkit-justify-content: space-between; /* Safari */
+  	justify-content:space-between;
+  	position:relative;
+
+	> div{
+
+		@include add-border(1px, #e9e9e9, "left");
+		padding-left:25px;
+
+		&:first-child{
+			border-left:none;
+			padding-left:0px;
+			min-width:145px;
+		}
+
+		&:last-child{
+			min-width:397px;
+		}
+
+		strong{
+			color:$primary-color;
+			font-weight:700;
+			font-size:22px;
+			letter-spacing:0.4px;
+		}
+
+		p{
+			color:$light-gray;
+			font-size:14px;
+			font-weight:400;
+			margin: 0px;
+		    margin-top: 5px;
+		    cursor:pointer;
+
+		    &:after{
+		    	content: "\f107";
+		    	display: inline-block;
+			    font: normal normal normal 14px/1 FontAwesome;
+			    font-size: inherit;
+			    text-rendering: auto;
+			    -webkit-font-smoothing: antialiased;
+			    -moz-osx-font-smoothing: grayscale;
+			    margin-top: -3px;
+			    margin-left: 76px;
+			    font-size: 22px;
+			    float: right;
+		    }
+		}
+	}
+
+
+	/* Location */
+	.location{
+
+		.jcf-select {
+			display:block;
+			border:none;
+			background:none;
+		}
+
+		select{
+			display:block;
+		}
+
+		.jcf-select .jcf-select-drop{
+			width:200px !important;
+		}
+
+		.jcf-scrollable-wrapper{
+			width:196px !important;
+		}
+
+		.jcf-select .jcf-select-text{
+			color:$light-gray;
+			font-size:14px;
+			font-weight:400;
+		}
+	}/* End Location */
+
+
+
+
+	/* Filter Content */
+
+	.filters{
+
+		.filter-content{
+			background:$bg-darken;
+			@include border-radius();
+			@include add-border(2px, $border-color ,"left-right");
+			@include add-border(2px, $border-color ,"bottom");
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.08);
+			padding:5px 25px;
+			position: absolute;
+		    margin-top:25px;
+		    right: 0px;
+		    width:424px;
+		    display:none;
+
+
+			ul.fileter-content-ul{
+				> li{
+					display:block;
+					padding-bottom:10px;
+
+					label{
+						display:block;
+						width:100%;
+					}
+
+
+					div.flex{
+						-webkit-align-items: baseline; /* Safari */
+						  align-items:         baseline;
+
+						 > div{
+						  	padding:0px 10px;
+						  }
+					}
+
+					input[type="submit"]{
+						float:right;
+						margin-top:10px;
+					}
+				}
+
+				> li.half{
+					display:inline-block;
+					width:46%;
+					float:left;
+
+					&.last{
+						margin-left:8%;
+					}
+				}
+
+				&:after{
+					clear:both;
+					content:'';
+					display:block;
+				}
+
+			}
+
+			.jcf-select{
+				position:relative;
+			}
+
+		}/* End Filter Content */
+
+	}/* End Filter */
+
+
+
+	/* Mortgage */
+	.mortgage{
+
+		.mortgage-options{
+			background:$bg-darken;
+			@include border-radius();
+			@include add-border(2px, $border-color ,"left-right");
+			@include add-border(2px, $border-color ,"bottom");
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.08);
+			padding:5px 25px;
+			position: absolute;
+		    margin-top:25px;
+		    width: 380px;
+		    margin-left: -27px;
+		    display:none;
+			z-index: 1;
+
+			    input[type="submit"]{
+			    	float:right;
+			    	margin-bottom:10px;
+			    }
+
+			    form{
+			    	position:relative;
+			    }
+
+			    .placeholder-txt{
+			    	position: absolute;
+				    right: 10px;
+				    top: 12px;
+				    color:$input-color;
+			    }
+
+			    &:after{
+					clear:both;
+					content:'';
+					display:block;
+			    }
+
+		}
+
+	}/* End  Mortgage */
+
+
+
+
+}/* End Option Filter */
+
+
+
+/* Location dropdown / Customized JCF plugin style */
+
+
+.jcf-select .jcf-select-opener{
+
+	&:after{
+		content: "\f107";
+		display: inline-block;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: inherit;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		margin-top: -22px;
+		font-size: 22px;
+		float: right;
+		color:$light-gray;
+	}
+
+}
+
+
+
+.jcf-select-drop .jcf-select-drop-content{
+	background:$bg-darken;
+	@include border-radius();
+	@include add-border(2px, $border-color ,"all");
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.08);
+}
+
+
+.jcf-list .jcf-option{
+	color: $light-gray;
+	padding:2px 15px;
+	text-decoration: none;
+	font-size:14px;
+
+	&:hover{
+		color:$secondary-color;
+	}
+}
+
+.jcf-scrollbar-vertical{
+	background:#efefef;
+	width:9px;
+
+	.jcf-scrollbar-handle {
+    	background: #dbdbdb;
+    	border-radius: 50px;
+    	width: 5px;
+    	margin-left:3px;
+	}
+}
