@@ -29,7 +29,6 @@ const PropertyHeader = ({ state, viewProperty, Sort, onChange }) => {
                 <div className="cash-half">
                     <div className="data-title">
                         <select
-                            data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                             onChange={onChange}
                             name="tableFilter"
                             value={tableFilter}

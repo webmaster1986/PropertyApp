@@ -73,7 +73,6 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
                                         onChange={onChange}
                                         value={minCash}
                                         name="minCash"
-                                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                     >
                                         <option value="">no min</option>
                                         {cash.map((cashMin, i) => (
@@ -85,7 +84,6 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
                                         onChange={onChange}
                                         value={maxCash}
                                         name="maxCash"
-                                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                     >
                                         <option value="">no max</option>
                                         {cash.map((cashMax, i) => (
@@ -101,7 +99,6 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
                                         onChange={onChange}
                                         value={minPrice}
                                         name="minPrice"
-                                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                     >
                                         <option value="">no min</option>
                                         {price.map((data, i) => (
@@ -113,7 +110,6 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
                                         onChange={onChange}
                                         value={maxPrice}
                                         name="maxPrice"
-                                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                     >
                                         <option value="">no max</option>
                                         {price.map((data, i) => (
@@ -129,7 +125,6 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
                                         onChange={onChange}
                                         value={minUnits}
                                         name="minUnits"
-                                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                     >
                                         <option value="">no min</option>
                                         {Bed.map((data, i) => (
@@ -141,7 +136,6 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
                                         onChange={onChange}
                                         value={maxUnits}
                                         name="maxUnits"
-                                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                     >
                                         <option value="">no max</option>
                                         {Bed.map((data, i) => (
@@ -157,7 +151,6 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
                                         onChange={onChange}
                                         value={minCOC}
                                         name="minCOC"
-                                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                     >
                                         <option value="">no min</option>
                                         {COC.map((cashMin, i) => (
@@ -169,7 +162,6 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
                                         onChange={onChange}
                                         value={maxCOC}
                                         name="maxCOC"
-                                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                     >
                                         <option value="">no max</option>
                                         {COC.map((cashMax, i) => (
@@ -185,7 +177,6 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
                                         onChange={onChange}
                                         value={minGRM}
                                         name="minGRM"
-                                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                     >
                                         <option value="">no min</option>
                                         {GRM.map((cashMin, i) => (
@@ -197,7 +188,6 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
                                         onChange={onChange}
                                         value={maxGRM}
                                         name="maxGRM"
-                                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                     >
                                         <option value="">no max</option>
                                         {GRM.map((cashMax, i) => (

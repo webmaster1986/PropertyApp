@@ -30,7 +30,6 @@ const SearchFiltertabs = (props) => {
                                     onChange={props.onChange}
                                     value={capMin}
                                     name="capMin"
-                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                 >
                                     <option value="">no min</option>
                                     {cash.map((cashMin, i) => (
@@ -45,7 +44,6 @@ const SearchFiltertabs = (props) => {
                                     onChange={props.onChange}
                                     value={capMax}
                                     name="capMax"
-                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                 >
                                     <option value="">no max</option>
                                     {cash.map((cashMax, i) => (
@@ -62,7 +60,6 @@ const SearchFiltertabs = (props) => {
                                     onChange={props.onChange}
                                     value={cocMin}
                                     name="cocMin"
-                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                 >
                                     <option value="">no min</option>
                                     {coc.map((cocMin, i) => (
@@ -77,7 +74,6 @@ const SearchFiltertabs = (props) => {
                                     onChange={props.onChange}
                                     value={cocMax}
                                     name="cocMax"
-                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                 >
                                     <option value="">no max</option>
                                     {coc.map((cocMax, i) => (
@@ -94,7 +90,6 @@ const SearchFiltertabs = (props) => {
                                     onChange={props.onChange}
                                     value={priceMin}
                                     name="priceMin"
-                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                 >
                                     <option value="">no min</option>
                                     {price.map((data, i) => (
@@ -109,7 +104,6 @@ const SearchFiltertabs = (props) => {
                                     onChange={props.onChange}
                                     value={priceMax}
                                     name="priceMax"
-                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                 >
                                     <option value="">no max</option>
                                     {price.map((data, i) => (
@@ -126,7 +120,6 @@ const SearchFiltertabs = (props) => {
                                     onChange={props.onChange}
                                     value={minNoOfUnits}
                                     name="minNoOfUnits"
-                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                 >
                                     <option value="">no min</option>
                                     {Units.map((data, i) => (
@@ -141,7 +134,6 @@ const SearchFiltertabs = (props) => {
                                     onChange={props.onChange}
                                     value={maxNoOfUnits}
                                     name="maxNoOfUnits"
-                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                 >
                                     <option value="">no max</option>
                                     {Units.map((data, i) => (
@@ -158,7 +150,6 @@ const SearchFiltertabs = (props) => {
                                     onChange={props.onChange}
                                     value={bathMin}
                                     name="bathMin"
-                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                 >
                                     <option value="">no min</option>
                                     {Bath.map((data, i) => (
@@ -173,7 +164,6 @@ const SearchFiltertabs = (props) => {
                                     onChange={props.onChange}
                                     value={bathMax}
                                     name="bathMax"
-                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                                 >
                                     <option value="">no max</option>
                                     {Bath.map((data, i) => (

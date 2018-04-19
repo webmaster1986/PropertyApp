@@ -169,7 +169,6 @@ class SearchFilter extends Component {
                             style={{width: '100%'}}
                             onChange={this.onSelect}
                             value={this.state.selectedCity}
-                            data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                         >
                             <option value="">Select city</option>
                             {this.props.allCities.map((city, i) => (

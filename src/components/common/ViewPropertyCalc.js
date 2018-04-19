@@ -40,7 +40,6 @@ const ViewPropertyCalc = ({ CalculationData, onChange, tableFilter }) => {
                 </div>
                 <div className="coc-options tableFilter">
                     <select
-                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                         onChange={onChange}
                         name="tableFilter"
                         value={tableFilter}
@@ -90,7 +89,6 @@ const ViewPropertyCalc = ({ CalculationData, onChange, tableFilter }) => {
                 </div>
                 <div className="coc-options tableFilter">
                     <select
-                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                         onChange={onChange}
                         name="tableFilter"
                         value={tableFilter}
@@ -132,7 +130,6 @@ const ViewPropertyCalc = ({ CalculationData, onChange, tableFilter }) => {
                 <div className="coc-equal"/>
                 <div className="coc-options tableFilter">
                     <select
-                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                         onChange={onChange}
                         name="tableFilter"
                         value={tableFilter}

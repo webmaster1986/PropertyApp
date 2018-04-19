@@ -413,9 +413,6 @@ ul {
 /* Base Style */
 a,
 button,
-.jcf-select,
-.jcf-list .jcf-option,
-.jcf-select .jcf-select-text,
 input[type="submit"],
 label:hover,
 .tabs li {
@@ -875,8 +872,7 @@ input[type="text"].small {
     margin-top: 10px;
 }
 
-.radio-group input[type="radio"],
-.radio-group .jcf-radio {
+.radio-group input[type="radio"] {
     display: none;
 }
 
@@ -902,7 +898,6 @@ input[type="text"].small {
 }
 
 .radio-group input[type="radio"]:checked + label,
-.radio-group .jcf-checked + label,
 .radio-group label:hover {
     background: #2fc865;
     color: #ffffff;
@@ -947,28 +942,6 @@ input[type="password"]:-ms-input-placeholder {
 input[type="password"]:-moz-placeholder {
     /* Firefox 18- */
     color: #dadada;
-}
-
-/* Select  */
-.jcf-select {
-    min-width: auto;
-    padding: 0px 8px;
-    height: 35px;
-    background: #ffffff;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border: 2px solid #f4f4f4;
-}
-
-.jcf-select .jcf-select-drop {
-    width: auto !important;
-}
-
-.jcf-select .jcf-select-text {
-    color: #6a6a6a;
-    font-size: 14px;
-    font-weight: 400;
 }
 
 /* Finder Filter */
@@ -1036,30 +1009,9 @@ input[type="password"]:-moz-placeholder {
     float: right;
 }
 
-.options-filter .location .jcf-select {
-    display: block;
-    border: none;
-    background: none;
-}
-
 .options-filter .location select {
     display: block;
 }
-
-.options-filter .location .jcf-select .jcf-select-drop {
-    width: 200px !important;
-}
-
-.options-filter .location .jcf-scrollable-wrapper {
-    width: 196px !important;
-}
-
-.options-filter .location .jcf-select .jcf-select-text {
-    color: #9d9d9d;
-    font-size: 14px;
-    font-weight: 400;
-}
-
 .options-filter .filters {
     /* End Filter Content */
 }
@@ -1132,10 +1084,6 @@ input[type="password"]:-moz-placeholder {
     display: block;
 }
 
-.options-filter .filters .filter-content .jcf-select {
-    position: relative;
-}
-
 .options-filter .mortgage .mortgage-options {
     background: #fcfcfc;
     border-radius: 3px;
@@ -1188,52 +1136,6 @@ input[type="password"]:-moz-placeholder {
 }
 
 /* End Option Filter */
-/* Location dropdown / Customized JCF plugin style */
-.jcf-select .jcf-select-opener:after {
-    content: "\f107";
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin-top: -22px;
-    font-size: 22px;
-    float: right;
-    color: #9d9d9d;
-}
-
-.jcf-select-drop .jcf-select-drop-content {
-    background: #fcfcfc;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border: 2px solid #f4f4f4;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
-}
-
-.jcf-list .jcf-option {
-    color: #9d9d9d;
-    padding: 2px 15px;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.jcf-list .jcf-option:hover {
-    color: #2fc865;
-}
-
-.jcf-scrollbar-vertical {
-    background: #efefef;
-    width: 9px;
-}
-
-.jcf-scrollbar-vertical .jcf-scrollbar-handle {
-    background: #dbdbdb;
-    border-radius: 50px;
-    width: 5px;
-    margin-left: 3px;
-}
 
 /* Table Styles */
 .table {
@@ -2026,14 +1928,8 @@ input[type="password"]:-moz-placeholder {
     .options-filter > div:last-child {
         min-width: 100%;
     }
-    .options-filter .location .jcf-select {
-        position: relative;
-    }
     .options-filter > div p:after {
         margin-left: 10px;
-    }
-    .location .jcf-select .jcf-select-opener:after {
-        margin-right: -9px;
     }
     .options-filter .filters .filter-content,
     .options-filter .mortgage .mortgage-options {
@@ -2139,9 +2035,6 @@ input[type="password"]:-moz-placeholder {
     header .logo {
         font-size: 16px;
     }
-    .jcf-select {
-        padding: 4px 4px;
-    }
     header .user .dropbtn {
         font-size: 12px;
     }
@@ -2191,14 +2084,8 @@ input[type="password"]:-moz-placeholder {
     .options-filter > div:last-child {
         min-width: 100%;
     }
-    .options-filter .location .jcf-select {
-        position: relative;
-    }
     .options-filter > div p:after {
         margin-left: 10px;
-    }
-    .location .jcf-select .jcf-select-opener:after {
-        margin-right: -9px;
     }
     .data-table {
         padding-top: 37px;

@@ -4,29 +4,6 @@
         .cash-half {
             .data-title {
                 position: relative;
-                .jcf-select {
-                    background: transparent;
-                    border: none;
-                    width: 240px !important;
-
-                    .jcf-select-drop {
-                        width: 240px !important;
-                    }
-
-                    .jcf-select-text,
-                    .jcf-option {
-                        color: #9d9d9d;
-                        font-size: 18px;
-                        font-weight: 700;
-                        cursor: pointer;
-                    }
-                    .jcf-option {
-                        font-size: 18px;
-                    }
-                    .jcf-select-drop {
-                        top: 40px;
-                    }
-                }
             }
             .data-percentage {
                 font-size: 50px;

@@ -22,8 +22,6 @@ class SavedSearch extends Component {
     }
 
     componentDidMount() {
-    //	jcf.replaceAll();
-
         if (this.props.allCities.length === 0) {
             this.props.actions.getCities();
         }

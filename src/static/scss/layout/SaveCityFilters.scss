@@ -9,13 +9,6 @@
       position: absolute;
       top: 60px;
 
-      .jcf-select {
-        position: relative;
-        height: 40px;
-      }
-      .jcf-select-opener:after {
-        margin-top: -22px;
-      }
     }
     .edit-mode {
       .edit-tabs {
@@ -42,22 +35,6 @@
         a.primary-btn {
           float:right;
           margin-bottom: 10px;
-        }
-      }
-      .jcf-select {
-        position: relative;
-        width: 100%;
-        text-align: left;
-        height: 31px;
-        padding: 10px;
-
-        .jcf-list {
-          .jcf-option {
-            font-weight: normal;
-          }
-        }
-        .jcf-select-opener:after {
-          margin-top: -19px;
         }
       }
       input[type=text] {
