@@ -6,7 +6,6 @@ import Tabs from './common/Tabs';
 import Mortgage from './common/Mortgage';
 import ViewPropertyCalc from './common/ViewPropertyCalc';
 import apiService from '../utils/apiService';
-import DoSlider from '../static/vendor/thumbnailSlider/thumbnail-slider.js';
 import * as jcf from '../static/vendor/jcf/js/jcf.js';
 import '../static/scss/layout/viewProperty.scss';
 
@@ -69,8 +68,6 @@ class ViewProperty extends Component {
 
     componentDidMount() {
         window.scrollTo(0,0);
-        jcf.replaceAll();
-        DoSlider();
     }
 
     componentWillMount() {
@@ -219,12 +216,6 @@ class ViewProperty extends Component {
                 this.onBlur();
             });
         });
-    }
-
-    componentDidUpdate(prevState) {
-        if (!prevState.propertyImages && this.state.propertyImages) {
-            DoSlider();
-        }
     }
 
     save = () => {

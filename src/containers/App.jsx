@@ -6,6 +6,9 @@ import utils from '../utils/common';
 import LoggedIn from './LoggedIn';
 import LoggedOut from './LoggedOut';
 import imgBackground from '../static/images/background.png';
+import '../static/scss/style.css'
+import '../static/scss/main.css'
+import '../components/common/Button.css'
 
 const backGround = {
     backgroundImage: `url(${imgBackground})`,

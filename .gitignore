@@ -2,12 +2,17 @@
 
 # dependencies
 /node_modules
+.idea
 
 # testing
 /coverage
 
 # production
 /build
+
+.idea/
+
+/src/**/*.css
 
 # misc
 .DS_Store

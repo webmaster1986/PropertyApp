@@ -7,6 +7,7 @@ import PropertyHeader from './common/PropertyHeader';
 import CONST from '../utils/CONST';
 import '../static/scss/layout/searchPage.scss';
 import MapComponent from './MapComponent';
+import $ from 'jquery';
 
 const options = CONST.OPTIONS;
 

@@ -4,6 +4,7 @@ import SearchFiltertabs from './common/SaveCItyFiltersTabs';
 import CONST from '../utils/CONST';
 import Service from '../utils/apiService';
 import * as jcf from '../static/vendor/jcf/js/jcf.js';
+import $ from 'jquery';
 import '../static/scss/layout/SaveCityFilters.scss';
 
 class SearchFilter extends Component {

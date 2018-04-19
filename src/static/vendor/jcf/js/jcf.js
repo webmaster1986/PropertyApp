@@ -8,12 +8,12 @@
  */
 ;(function(root, factory) {
 	'use strict';
-	if (typeof define === 'function' && define.amd) {
-		define(['jquery'], factory);
+	if (typeof window.define === 'function' && window.define.amd) {
+        window.define(['jquery'], factory);
 	} else if (typeof exports === 'object') {
 		module.exports = factory(require('jquery'));
 	} else {
-		root.jcf = factory(jQuery);
+		root.jcf = factory(window.jQuery);
 	}
 }(this, function($) {
 	'use strict';
@@ -450,7 +450,7 @@
 	};
 
 	// we need to make JCF available globally if we're in AMD environment
-	if (typeof define === 'function' && define.amd) {
+	if (typeof window.define === 'function' && window.define.amd) {
 		window.jcf = api;
 	}
 

@@ -7,7 +7,6 @@ import { render } from 'react-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Switch, Route } from 'react-router'
 import { createLogger } from 'redux-logger';
-import store from './Redux/store'
 import App from './containers/App';
 import reducer from './reducers/root-reducer';
 

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Footer from '../components/common/Footer';
 import AdminTabs from './common/AdminTabs';
+import jcf from '../static/vendor/jcf/js/jcf'
 import '../static/scss/layout/viewProperty.scss';
 import '../static/scss/layout/AdminSettings.scss';
 
