@@ -1,5 +1,6 @@
 import React from 'react';
 import NumberFormat from 'react-number-format';
+import Slider from "react-slick";
 import defaultImage from '../../static/images/default_slider.png';
 import './property-details.css';
 
@@ -26,41 +27,25 @@ const ProprtyDetails = ({ propertyObject, mapUrl }) => {
                     />
                 </div>
             </div>
-
             <div className="details-body">
-
-                {
-                    images.length > 1 &&
-                    <div className="flex slider">
-                        <div id="ninja-slider">
-                            <div className="slider-inner">
-                                <ul>
-                                    {
-                                        images.map((img, index) => (
-                                            <li key={index}><a className="ns-img" href={img}></a></li>
-                                        ))
-                                    }
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="thumbnail-slider">
-                            <div className="inner">
-                                <ul>
-                                    {
-                                        images.map((img, index) => (
-                                            <li key={index}><a className="thumb" href={img}></a></li>
-                                        ))
-                                    }
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                }
+              {
+                images.length > 1 &&
+                <Slider delay={1000} dots>
+                  {
+                    images.map((img, index) => (
+                      <div key={index}>
+                          <img src={img} alt={"img"} />
+                      </div>
+                    ))
+                  }
+                </Slider>
+              }
                 <p>{details}</p>
                 <iframe src={mapUrl} width="100%" height="500" frameBorder="0" styles="border:0"
                     allowFullScreen
                 > </iframe>
             </div>
+
         </div>
     );
 };

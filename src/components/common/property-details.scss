@@ -8,4 +8,23 @@
             border-radius: 2px;
         }
     }
+    .slick-slider {
+        .slick-slide {
+            img {
+                width: 100%;
+            }
+        }
+        button.slick-arrow.slick-prev {
+            margin-left: 34px;
+            z-index: 9;
+        }
+        button.slick-arrow.slick-next {
+            margin-right: 34px;
+            z-index: 9;
+        }
+        .slick-dots {
+            bottom: 20px;
+        }
+    }
+
 }

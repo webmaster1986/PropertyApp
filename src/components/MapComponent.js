@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { get } from 'axios';
 import logo from '../static/images/logo_icon.png';
-import '../static/scss/layout/MapComponent.scss';
+import '../static/scss/layout/MapComponent.css';
 
 let prevInfoWindow = false;
 

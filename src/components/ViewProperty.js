@@ -288,7 +288,6 @@ class ViewProperty extends Component {
 
     render() {
         const { downCpy, interestCpy, yearsCpy, addressForMap, cityFormap, zipForMap, stateForMap, editMode, CalculationData, propertyObject, tableFilter } = this.state;
-        //const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d868.7749949322764!2d-98.49508986270675!3d29.42587416170619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c5f52c80b6859%3A0xb6f0b438895012dc!2s${addressForMap }%2C+${ cityFormap }%2C+${ stateForMap }+${ zipForMap }!5e0!3m2!1sen!2s!4v1508764482197&zoom=15`;
         const mapUrl = `https://www.google.com/maps/embed/v1/place?zoom=11&q=${ addressForMap || '' }, ${ cityFormap || '' },${ stateForMap || '' },${ zipForMap || '' }&key=AIzaSyByeGt-b4I_9fGy2kd3ubDM4zKgC2ZAOoE`;
         return (
             <div className="view-property">
