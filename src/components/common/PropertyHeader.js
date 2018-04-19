@@ -2,7 +2,7 @@ import React from 'react';
 import Sticky from 'react-stickynode';
 import ASC from '../../static/images/sort_asc.png';
 import DESC from '../../static/images/sort_desc.png';
-import './property-header.scss';
+import './property-header.css';
 
 const PropertyHeader = ({ state, viewProperty, Sort, onChange }) => {
     const { tableFilter, selectedProperty, propertiesByCity, sortProp, limit, sortAscDesc } = state;

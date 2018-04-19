@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
-import * as jcf from '../static/vendor/jcf/js/jcf.js';
 import common from '../utils/common';
 import SearchHeader from './common/SearchHeader';
 import PropertyTable from './common/PropertyTable';
 import PropertyHeader from './common/PropertyHeader';
 import CONST from '../utils/CONST';
-import '../static/scss/layout/searchPage.scss';
+import '../static/scss/layout/searchPage.css';
 import MapComponent from './MapComponent';
 import $ from 'jquery';
 
@@ -128,7 +127,6 @@ class Search extends Component {
 
     componentDidMount() {
         window.scrollTo(0,0);
-        jcf.replace($('select').not('[name=pageSize]'));
     }
 
     componentWillReceiveProps(nextProps) {
@@ -542,11 +540,6 @@ class Search extends Component {
 
         otherPropertiesByCity.sort(dynamicSort(sortAscDesc ? property : `-${property}`));
         return otherPropertiesByCity.concat(emptyPropertiesByCity);
-    }
-
-    componentDidUpdate() {
-        const names = ['tableFilter', 'cityList', 'minCash', 'maxCash', 'maxPrice', 'minPrice', 'minUnits', 'maxUnits'];
-        names.forEach((name) => { jcf.replace(`[name=${name}]`); });
     }
 
     render() {

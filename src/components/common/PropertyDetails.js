@@ -1,7 +1,7 @@
 import React from 'react';
 import NumberFormat from 'react-number-format';
 import defaultImage from '../../static/images/slider-imgs/default_slider.png';
-import './property-details.scss';
+import './property-details.css';
 
 const ProprtyDetails = ({ propertyObject, mapUrl }) => {
     const { propertyImages, url, address, details, city, state, zipCode, bedNum, bathNum, squareFeet, dollarPerSquare, yearBuilt, price } = propertyObject;

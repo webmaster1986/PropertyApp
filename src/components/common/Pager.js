@@ -1,5 +1,5 @@
 import React from 'react';
-import './Pager.scss';
+import './Pager.css';
 
 const BASE_SHIFT = 0;
 const TITLE_SHIFT = 1;

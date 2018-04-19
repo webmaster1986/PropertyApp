@@ -1,6 +1,6 @@
 import React from 'react';
 import CONST from '../../utils/CONST';
-import './search-header.scss';
+import './search-header.css';
 
 const cash = CONST.CASH;
 

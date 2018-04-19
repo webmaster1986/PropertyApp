@@ -1,6 +1,6 @@
 import React from 'react';
 import NumberFormat from 'react-number-format';
-import './view-property-calc.scss';
+import './view-property-calc.css';
 
 const ViewPropertyCalc = ({ CalculationData, onChange, tableFilter }) => {
     const { totalAnnualIncome, totalAnnualExpense, totalAnnualCashFlow, totalInvestment, COC, netIncome, netExpense, netOperatingIncome, purchasePrice, capRate, grossRentMultiplier } = CalculationData;

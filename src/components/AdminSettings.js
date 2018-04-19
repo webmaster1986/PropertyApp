@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import Footer from '../components/common/Footer';
 import AdminTabs from './common/AdminTabs';
-import jcf from '../static/vendor/jcf/js/jcf'
-import '../static/scss/layout/viewProperty.scss';
-import '../static/scss/layout/AdminSettings.scss';
+import '../static/scss/layout/viewProperty.css';
+import '../static/scss/layout/AdminSettings.css';
 
 class AdminSettings extends Component {
 
@@ -24,7 +23,6 @@ class AdminSettings extends Component {
     }
 
     componentDidMount() {
-        jcf.replaceAll();
 
         if (this.props.allCities.length === 0) {
             this.props.actions.getCities();

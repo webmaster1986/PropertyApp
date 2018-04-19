@@ -6,8 +6,7 @@ import Tabs from './common/Tabs';
 import Mortgage from './common/Mortgage';
 import ViewPropertyCalc from './common/ViewPropertyCalc';
 import apiService from '../utils/apiService';
-import * as jcf from '../static/vendor/jcf/js/jcf.js';
-import '../static/scss/layout/viewProperty.scss';
+import '../static/scss/layout/viewProperty.css';
 
 class ViewProperty extends Component {
 
