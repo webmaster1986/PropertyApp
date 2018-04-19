@@ -3,7 +3,6 @@ import Footer from '../components/common/Footer';
 import SearchFiltertabs from './common/SaveCItyFiltersTabs';
 import CONST from '../utils/CONST';
 import Service from '../utils/apiService';
-import $ from 'jquery';
 import '../static/scss/layout/SaveCityFilters.css';
 
 class SearchFilter extends Component {

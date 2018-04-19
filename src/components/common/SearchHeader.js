@@ -32,7 +32,6 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
                     onChange={onSelect}
                     name="cityList"
                     value={selectedCity}
-                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'
                 >
                     {allCities.map((city, i) => (
                         <option key={i} value={city.name}>{city.name}</option>
