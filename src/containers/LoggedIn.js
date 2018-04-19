@@ -7,7 +7,6 @@ import utils from '../utils/common';
 import ProfileHeader from '../components/common/ProfileHeader';
 import propertyListContainer from './propertyListContainer';
 import ViewPropertyContainer from './ViewPropertyContainer';
-import EditMortgageContainer from './EditMortgageContainer';
 import SettingsContainer from './SettingsContainer';
 import ChangePasswordContainer from './ChangePasswordContainer';
 import AdminSettingsContainer from './AdminSettingsContainer';
@@ -29,7 +28,6 @@ const LoggedIn = ({user, actions}) => {
             <Switch>
                 <Route path="/propertyList" component={propertyListContainer}/>
                 <Route path="/viewProperty/:propertyId" component={ViewPropertyContainer}/>
-                <Route path="/editMortgage" component={EditMortgageContainer}/>
                 <Route path="/settings" component={SettingsContainer}/>
                 <Route path="/changePassword" component={ChangePasswordContainer}/>
                 <Route path="/adminsettings" component={AdminSettingsContainer}/>

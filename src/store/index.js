@@ -1,8 +1,8 @@
-import { applyMiddleware, createStore, compose } from 'redux'
+import { applyMiddleware, createStore, compose } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { createLogger } from 'redux-logger';
-import thunk from 'redux-thunk'
-import reducer from '../reducers/root-reducer'
+import thunk from 'redux-thunk';
+import reducer from '../reducers/root-reducer';
 
 const middlewares = [thunk];
 let composeEnhancers = compose;

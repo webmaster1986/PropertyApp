@@ -6,9 +6,6 @@ import PropertyHeader from './common/PropertyHeader';
 import CONST from '../utils/CONST';
 import '../static/scss/layout/searchPage.css';
 import MapComponent from './MapComponent';
-import $ from 'jquery';
-
-const options = CONST.OPTIONS;
 
 const cash = CONST.CASH;
 
@@ -235,7 +232,7 @@ class Search extends Component {
         const { downCpy, interestCpy, yearsCpy } = this.state;
         const arrayObj = this.state.propertiesByCity;
         this.state.propertiesByCity = [];
-        $('#mortgage-options').hide();
+        //$('#mortgage-options').hide();
         this.calculateCOC2(arrayObj);
         const cityFilters = {
             downCpy: common.FormatNumber(downCpy),
@@ -411,7 +408,7 @@ class Search extends Component {
             propertyList = propertyList.filter((x) => common.FormatNumber(x.grossRentMultiplier) <= common.FormatNumber(maxGRM));
         }
         this.setState({propertiesByCity: propertyList});
-        $('#filter-content').hide();
+        //$('#filter-content').hide();
 
         if (e) {
             const cityFilters = {
