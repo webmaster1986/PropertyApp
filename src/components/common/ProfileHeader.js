@@ -12,6 +12,16 @@ export default class ProfileHeader extends Component {
         };
     }
 
+    componentDidMount() {
+        const self = this;
+        document.body.addEventListener("click",()=>{
+            if (self.state.drop === 'block') {
+                self.setState({
+                    drop: '',
+                })
+            }
+        })
+    }
 
     toggleDropdown = () => {
         if (this.state.drop === 'block') {

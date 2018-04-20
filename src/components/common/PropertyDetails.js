@@ -8,6 +8,10 @@ const ProprtyDetails = ({ propertyObject, mapUrl }) => {
     const { propertyImages, url, address, details, city, state, zipCode, bedNum, bathNum, squareFeet, dollarPerSquare, yearBuilt, price } = propertyObject;
     const images = propertyImages || [defaultImage];
 
+    const onError = (img) => {
+        img.target.src = defaultImage
+    }
+
     return (
         <div className="data-details v2"><br/>
             <div className="details-header flex">
@@ -34,7 +38,7 @@ const ProprtyDetails = ({ propertyObject, mapUrl }) => {
                   {
                     images.map((img, index) => (
                       <div key={index}>
-                          <img src={img} alt={"img"} />
+                          <img src={img} alt={"img"} onError={onError} />
                       </div>
                     ))
                   }
