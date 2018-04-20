@@ -1,6 +1,6 @@
 import axios from 'axios';
 import * as PROD from './ServiceUrl';
-import common from '../utils/common';
+import common from '../../utils/common';
 
 
 export function getPropertyByCity(city) {

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import * as PROD from '../actions/ServiceUrl';
+import * as PROD from '../redux/actions/ServiceUrl';
 import common from '../utils/common';
 
 const userSignup = (email, pwd, fName, lName, timeZone, cb) => {

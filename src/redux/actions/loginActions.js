@@ -1,6 +1,6 @@
 import axios from 'axios';
 import * as PROD from './ServiceUrl';
-import CONST from '../utils/CONST';
+import CONST from '../../utils/CONST';
 
 
 export function userLogin(email, pwd, gType, scope, callback) {

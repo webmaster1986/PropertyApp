@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import * as Actions from '../actions/userActions';
+import * as Actions from '../redux/actions/userActions';
 import { bindActionCreators } from 'redux';
 import utils from '../utils/common';
 import ProfileHeader from '../components/common/ProfileHeader';

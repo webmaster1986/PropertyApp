@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import * as Actions from '../actions/loginActions';
+import * as Actions from '../redux/actions/loginActions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Login from '../components/Login';

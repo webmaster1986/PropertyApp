@@ -1,7 +1,7 @@
 import signUp from './signUp';
 import login from './login';
 import userAction from './userAction';
-import common from '../utils/common';
+import common from '../../utils/common';
 
 import {
     combineReducers,
