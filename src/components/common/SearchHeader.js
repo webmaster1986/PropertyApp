@@ -15,7 +15,16 @@ const GRM = CONST.GRM;
 const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, save, clearFilters }) => {
     const { allCities, selectedCity, downCpy, interestCpy, yearsCpy, minCash, maxCash, minPrice, maxPrice, minUnits, maxUnits, minCOC, maxCOC, minGRM, maxGRM} = state;
 
-    const filterText = (<p>
+    const onFiltersClick = () => {
+        const classes = document.getElementById("filter-content").classList
+        if(classes.contains("hide")) {
+            document.getElementById("filter-content").setAttribute("class", "filter-content")
+        } else {
+            document.getElementById("filter-content").setAttribute("class", "filter-content hide")
+        }
+    }
+
+    const filterText = (<p onClick={onFiltersClick}>
         {!minCash && !maxCash && !minUnits && !maxUnits && !minPrice && !maxPrice && !minCOC && !maxCOC && !minGRM && !maxGRM && 'No Filters'}
         {!minCash && !maxCash ? '' : ` Cap Rate: ${ minCash ? `${minCash}%` : '<' }${(minCash && maxCash && ' - ')}${ maxCash ? ` ${maxCash}%` : '+'}` }
         {!minPrice && !maxPrice ? '' : ` Price: ${ `${minPrice ? `$${minPrice}` : '<'}`}${(minPrice && maxPrice && ' - ')}${ ` ${maxPrice ? `$${maxPrice}` : '+'}` }`}
@@ -23,6 +32,15 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
         {!minCOC && !maxCOC ? '' : ` COC: ${ minCOC || '<' }${(minCOC && maxCOC && ' - ')}${ maxCOC ? ` ${maxCOC}` : '+'}` }
         {!minGRM && !maxGRM ? '' : ` GRM: ${ minGRM || '<' }${(minGRM && maxGRM && ' - ')}${ maxGRM ? ` ${maxGRM}` : '+'}` }
     </p>);
+
+    const onMortgageClick = () => {
+        const classes = document.getElementById("mortgage-options").classList
+        if(classes.contains("hide")) {
+            document.getElementById("mortgage-options").setAttribute("class", "mortgage-options")
+        } else {
+            document.getElementById("mortgage-options").setAttribute("class", "mortgage-options hide")
+        }
+    }
 
     return (
         <div className="options-filter flex">
@@ -41,10 +59,10 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
 
             <div className="mortgage">
                 <strong>Mortgage</strong>
-                <p>
+                <p onClick={onMortgageClick}>
                     {`${downCpy}% down, ${interestCpy} interest @ ${yearsCpy} years`}</p>
 
-                <div id="mortgage-options" className="mortgage-options">
+                <div id="mortgage-options" className="mortgage-options hide">
                     <form>
                         <label className="default">Down</label>
                         <input className="small m-t-0" type="text" name="downCpy" placeholder="25" onChange={onChange} value={downCpy} />
@@ -63,7 +81,7 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
                 <strong>Filters </strong>
                 <span>(<a className="clear-btn" onClick={clearFilters}>Clear</a>)</span>
                 { filterText }
-                <div id="filter-content" className="filter-content">
+                <div id="filter-content" className="filter-content hide">
                     <form>
                         <ul className="fileter-content-ul">
                             <li>
@@ -118,7 +136,7 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
                                     </select>
                                 </div>
                             </li>
-                            <li className="half">
+                            <li>
                                 <label className="default">Units</label>
                                 <div className="flex">
                                     <select
@@ -144,7 +162,7 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
                                     </select>
                                 </div>
                             </li>
-                            <li className="half">
+                            <li>
                                 <label className="default">Cash on Cash Return</label>
                                 <div className="flex">
                                     <select
@@ -170,7 +188,7 @@ const SearchHeader = ({ onSelect, state, onChange, onSearchFilter, saveYears, sa
                                     </select>
                                 </div>
                             </li>
-                            <li className="half">
+                            <li>
                                 <label className="default">Gross Rent Multiplier</label>
                                 <div className="flex">
                                     <select

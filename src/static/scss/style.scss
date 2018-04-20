@@ -993,6 +993,7 @@ input[type="password"]:-moz-placeholder {
     margin: 0px;
     margin-top: 5px;
     cursor: pointer;
+    user-select: none;
 }
 
 .options-filter > div p:after {
@@ -1027,11 +1028,14 @@ input[type="password"]:-moz-placeholder {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
     padding: 5px 25px;
     position: absolute;
-    margin-top: 25px;
-    right: 0px;
+    margin-top: 10px;
+    right: 0;
     width: 424px;
-    display: none;
     z-index: 1;
+
+    &.hide {
+      display: none;
+    }
 }
 
 .options-filter .filters .filter-content ul.fileter-content-ul > li {
@@ -1095,7 +1099,7 @@ input[type="password"]:-moz-placeholder {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
     padding: 5px 25px;
     position: absolute;
-    margin-top: 25px;
+    margin-top: 10px;
     width: 380px;
     margin-left: -27px;
     z-index: 1;
