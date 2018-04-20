@@ -1,6 +1,7 @@
 import React from 'react';
 import NumberFormat from 'react-number-format';
 import Slider from "react-slick";
+import noImage from '../../static/images/noimage.png';
 import defaultImage from '../../static/images/default_slider.png';
 import './property-details.css';
 
@@ -9,7 +10,7 @@ const ProprtyDetails = ({ propertyObject, mapUrl }) => {
     const images = propertyImages || [defaultImage];
 
     const onError = (img) => {
-        img.target.src = defaultImage
+        img.target.src = noImage
     }
 
     return (
