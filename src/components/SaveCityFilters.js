@@ -196,9 +196,9 @@ class SearchFilter extends Component {
                         <div className="edit-mode">
                             <div className="edit-tabs flex">
                                 <ul className="tabs">
-                                    <li id="tab-1" onClick={this.onChangeTab}>Filters</li>
-                                    <li id="tab-2" onClick={this.onChangeTab}>Mortgage</li>
-                                    <li id="tab-3" onClick={this.onChangeTab}>Expenses</li>
+                                    <li id="tab-1" className={this.state.activeTab === 'tab-1' ? 'active' : ''} onClick={this.onChangeTab}>Filters</li>
+                                    <li id="tab-2" className={this.state.activeTab === 'tab-2' ? 'active' : ''} onClick={this.onChangeTab}>Mortgage</li>
+                                    <li id="tab-3" className={this.state.activeTab === 'tab-3' ? 'active' : ''} onClick={this.onChangeTab}>Expenses</li>
                                 </ul>
                                 <SearchFiltertabs
                                     onChange={this.onChange}

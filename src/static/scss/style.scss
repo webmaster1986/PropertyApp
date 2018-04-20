@@ -453,7 +453,6 @@ a:hover {
     min-height: 100vh;
     padding-left: 15px;
     padding-right: 15px;
-    overflow: scroll;
 }
 
 .wrapper {
@@ -1041,6 +1040,10 @@ input[type="password"]:-moz-placeholder {
 .options-filter .filters .filter-content ul.fileter-content-ul > li {
     display: block;
     padding-bottom: 10px;
+}
+
+.options-filter .filters .filter-content ul.fileter-content-ul select {
+    width: 50%;
 }
 
 .options-filter .filters .filter-content ul.fileter-content-ul > li label {
@@ -2171,10 +2174,16 @@ select {
     color: #9d9d9d;
     font-size: 14px;
     font-weight: 400;
-    border: none;
+    padding: 0px 8px;
+    height: 35px;
+    background: #ffffff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 2px solid #f4f4f4;
 
     &:focus {
-        border: none;
+       outline: none;
     }
 }
 

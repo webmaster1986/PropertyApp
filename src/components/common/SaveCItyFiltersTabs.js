@@ -24,7 +24,7 @@ const SearchFiltertabs = (props) => {
             {
                 activeTab === 'tab-1' &&
                 <div className="tab-data" id="tab-data-1">
-                    <table className="table table-striped table-hover" style={{display: 'block'}}>
+                    <table className="table table-striped table-hover">
                     <tbody>
                     <tr style={{lineHeight: 0.8}}>
                         <td>Cap Rate</td>
