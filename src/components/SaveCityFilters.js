@@ -53,6 +53,7 @@ class SearchFilter extends Component {
             selectedCityName: selectedCityName || '',
             allCities: allCities,
             loader: false,
+            activeTab: 'tab-1',
         };
 
     }
@@ -160,6 +161,12 @@ class SearchFilter extends Component {
         });
     }
 
+    onChangeTab = (event) => {
+        this.setState({
+            activeTab: event.target.id,
+        })
+    }
+
     render() {
         return (
             <div className="view-property save-city-search">
@@ -189,9 +196,9 @@ class SearchFilter extends Component {
                         <div className="edit-mode">
                             <div className="edit-tabs flex">
                                 <ul className="tabs">
-                                    <li id="tab-1">Filters</li>
-                                    <li id="tab-2">Mortgage</li>
-                                    <li id="tab-3">Expenses</li>
+                                    <li id="tab-1" onClick={this.onChangeTab}>Filters</li>
+                                    <li id="tab-2" onClick={this.onChangeTab}>Mortgage</li>
+                                    <li id="tab-3" onClick={this.onChangeTab}>Expenses</li>
                                 </ul>
                                 <SearchFiltertabs
                                     onChange={this.onChange}

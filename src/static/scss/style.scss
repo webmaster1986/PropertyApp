@@ -1098,11 +1098,14 @@ input[type="password"]:-moz-placeholder {
     margin-top: 25px;
     width: 380px;
     margin-left: -27px;
-    display: none;
     z-index: 1;
+
     .filter-save-btn {
         background: #2fc865;
         color: white;
+    }
+    &.hide {
+        display: none;
     }
 }
 
@@ -1648,10 +1651,6 @@ input[type="password"]:-moz-placeholder {
     color: #2fc865;
 }
 
-.edit-tabs .tabs-data .tab-data {
-    display: none;
-}
-
 .edit-tabs .tabs-data #tab-data-1 {
     display: block;
 }
@@ -2162,4 +2161,15 @@ header {
 
 .m-t-0 {
     margin-top: 0 !important;
+}
+
+select {
+    color: #9d9d9d;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+
+    &:focus {
+        border: none;
+    }
 }

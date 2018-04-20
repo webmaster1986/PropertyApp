@@ -14,6 +14,7 @@ class ViewProperty extends Component {
         super(props);
         this.state = {
             editMode: false,
+            activeTab: 'tab-1',
             tableFilter: 'cap',
             propertyObject: {},
             loginUser: '',
@@ -286,6 +287,12 @@ class ViewProperty extends Component {
 
     }
 
+    onChangeTab = (event) => {
+        this.setState({
+          activeTab: event.target.id,
+        })
+    }
+
     render() {
         const { downCpy, interestCpy, yearsCpy, addressForMap, cityFormap, zipForMap, stateForMap, editMode, CalculationData, propertyObject, tableFilter } = this.state;
         const mapUrl = `https://www.google.com/maps/embed/v1/place?zoom=11&q=${ addressForMap || '' }, ${ cityFormap || '' },${ stateForMap || '' },${ zipForMap || '' }&key=AIzaSyByeGt-b4I_9fGy2kd3ubDM4zKgC2ZAOoE`;
@@ -320,9 +327,9 @@ class ViewProperty extends Component {
 
                                 <div className={`edit-tabs flex ${editMode ? '' : 'hide'}`}>
                                     <ul className="tabs">
-                                        <li id="tab-1" className="active">Income</li>
-                                        <li id="tab-2" className={tableFilter === 'gross' ? 'hide' : ''}>Expenses</li>
-                                        <li id="tab-3" className={tableFilter !== 'coc' ? 'hide' : ''}>Upfront Expenses</li>
+                                        <li id="tab-1" onClick={this.onChangeTab} className="active">Income</li>
+                                        <li id="tab-2" onClick={this.onChangeTab} className={tableFilter === 'gross' ? 'hide' : ''}>Expenses</li>
+                                        <li id="tab-3" onClick={this.onChangeTab} className={tableFilter !== 'coc' ? 'hide' : ''}>Upfront Expenses</li>
                                     </ul>
                                     <Tabs
                                         state={this.state}

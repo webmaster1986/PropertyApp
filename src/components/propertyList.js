@@ -4,8 +4,8 @@ import SearchHeader from './common/SearchHeader';
 import PropertyTable from './common/PropertyTable';
 import PropertyHeader from './common/PropertyHeader';
 import CONST from '../utils/CONST';
-import '../static/scss/layout/searchPage.css';
 import MapComponent from './MapComponent';
+import '../static/scss/layout/searchPage.css';
 
 const cash = CONST.CASH;
 
