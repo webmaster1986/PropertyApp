@@ -30,7 +30,7 @@ export function getPropertyByCity(city) {
                     },
                 });
             }).catch((error) => {
-                const data = error;
+                //const data = error;
                 // dispatch({
                 //   type: 'USER_LOGIN',
                 //   data,
@@ -50,7 +50,7 @@ export function getCities() {
 
         })
             .then((response) => {
-                const data = response && response.data || [];
+                const data = (response && response.data) || [];
                 dispatch({
                     type: 'ALL_CITIES',
                     data,

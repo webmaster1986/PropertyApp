@@ -47,7 +47,7 @@ class Register extends Component {
         e.preventDefault();
         const { step, name, timeZone, email, password, repeatPassword} = this.state;
         const first = name && name.split(' ')[0];
-        const last = name && name.split(' ')[1] || '';
+        const last = (name && name.split(' ')[1]) || '';
         if (step === 0) {
             if (first.trim() === '' || last.trim() === '') {
                 this.setState({
@@ -59,6 +59,7 @@ class Register extends Component {
                 });
             }
         } else if (step === 1) {
+            // eslint-disable-next-line
             const regExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
             if (email.trim() === '' || !regExp.test(email)) {
                 this.setState({

@@ -46,7 +46,7 @@ const ProprtyDetails = ({ propertyObject, mapUrl }) => {
                 </Slider>
               }
                 <p>{details}</p>
-                <iframe src={mapUrl} width="100%" height="500" frameBorder="0" styles="border:0"
+                <iframe src={mapUrl} title="map" width="100%" height="500" frameBorder="0" styles="border:0"
                     allowFullScreen
                 > </iframe>
             </div>
