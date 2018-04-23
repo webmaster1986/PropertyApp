@@ -55,7 +55,7 @@ class PropertyList extends Component {
                         <tr>
                             {
                                 ['Address', 'Price', 'Units', 'Sq. Ft', '$/Sq. Ft', 'On the market', tableFilter === 'cap' ? 'Cap Rate' : (tableFilter === 'gross' && 'GRM') || (tableFilter === 'coc' && 'COC')].map((i) => (
-                                    <th key={i} onClick={() => this.props.Sort(i)}>{i}{this.props.sortProp === i && (this.props.sortAscDesc ? <img src={ASC} /> : <img src={DESC} />) || ''}</th>
+                                    <th key={i} onClick={() => this.props.Sort(i)}>{i}{this.props.sortProp === i ? (this.props.sortAscDesc ? <img src={ASC} alt="asc" /> : <img src={DESC} alt="desc" />) : ''}</th>
                                 ))
                             }
                         </tr>

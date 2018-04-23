@@ -39,7 +39,7 @@ const PropertyHeader = ({ state, viewProperty, Sort, onChange }) => {
                         </select>
                     </div>
                     <div className="data-percentage">
-                        { `${ dataPercent ? dataPercent : '0' }${tableFilter !== 'gross' && '%' || ''}` }
+                        { `${ dataPercent ? dataPercent : '0' }${tableFilter !== 'gross' ? '%' : ''}` }
                     </div>
 
                     {selectedProperty.details && selectedProperty.details.length > limit ?
@@ -63,7 +63,7 @@ const PropertyHeader = ({ state, viewProperty, Sort, onChange }) => {
                         <tr>
                             {
                                 ['Address', 'Price', 'Units', 'Sq. Ft', '$/Sq. Ft', 'On the market', tableFilter === 'cap' ? 'Cap Rate' : (tableFilter === 'gross' && 'GRM') || (tableFilter === 'coc' && 'COC')].map((i) => (
-                                    <th key={i} onClick={() => Sort(i)}>{i}{sortProp === i && (sortAscDesc ? <img src={ASC} /> : <img src={DESC} />) || ''}</th>
+                                    <th key={i} onClick={() => Sort(i)}>{i}{sortProp === i ? (sortAscDesc ? <img src={ASC} alt="asc" /> : <img src={DESC} alt="desc" />) : ''}</th>
                                 ))
                             }
                         </tr>
