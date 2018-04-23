@@ -113,7 +113,7 @@ class SearchFilter extends Component {
     onSelect = (e) => {
         const city = e.target.value;
         let selectedCityName = this.props.allCities.filter((x) => x.cityId === city);
-        selectedCityName = selectedCityName.length && selectedCityName[0].name || '';
+        selectedCityName = (selectedCityName.length && selectedCityName[0].name) || '';
         localStorage.setItem('selectedCity', selectedCityName);
         const filter = this.state.filter;
         this.setState({
@@ -138,7 +138,7 @@ class SearchFilter extends Component {
         const filter = this.state.filter;
         Service.getCityFilters(city, (res) => {
             Object.keys(filter).forEach((i) => {
-                filter[i] = res.res.data[i] === 0 ? 0 : (res.res && res.res.data && res.res.data[i] || filter[i]);
+                filter[i] = res.res.data[i] === 0 ? 0 : ((res.res && res.res.data && res.res.data[i]) || filter[i]);
             });
             this.setState({
                 filter,

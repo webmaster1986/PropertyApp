@@ -15,7 +15,7 @@ const Header = (props) => {
                 props.redirectLoginPage ?
                     <div className="login" onClick={props.redirectLoginPage}>
                         <p>Already have an account?</p>
-                        <a href="#" className="primary-btn">Login</a>
+                        <a className="primary-btn">Login</a>
                     </div> :
                     props.redirectRegisterPage && <div className="login" onClick={props.redirectRegisterPage}>
                         <a className="primary-btn">Register</a>

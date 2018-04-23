@@ -15,8 +15,6 @@ const Bed = CONST.BED;
 
 const Bath = CONST.BATH;
 
-const Units = CONST.UNITS;
-
 function dynamicSort(property) {
     let sortOrder = 1;
     if (property[0] === '-') {
@@ -223,6 +221,7 @@ class Search extends Component {
 
     saveCOC = (obj) => {
         const arrayObj = obj;
+        //eslint-disable-next-line
         this.state.propertiesByCity = [];
         this.calculateCOC2(arrayObj);
     }
@@ -231,8 +230,8 @@ class Search extends Component {
         e.preventDefault();
         const { downCpy, interestCpy, yearsCpy } = this.state;
         const arrayObj = this.state.propertiesByCity;
+        //eslint-disable-next-line
         this.state.propertiesByCity = [];
-        //$('#mortgage-options').hide();
         this.calculateCOC2(arrayObj);
         const cityFilters = {
             downCpy: common.FormatNumber(downCpy),
@@ -347,7 +346,7 @@ class Search extends Component {
         const {minCash, maxCash, maxPrice, minPrice, minUnits, maxUnits, sortProp, sortAscDesc} = this.state;
 
         if (sortProp && sortAscDesc && this.state.propertiesByCity.length) {
-
+            //eslint-disable-next-line
             this.state.propertiesByCity = this.SortMethod(sortProp, sortAscDesc === 'true', this.state.propertiesByCity);
 
         } else if (this.state.propertiesByCity && this.state.propertiesByCity.length) {
@@ -401,7 +400,6 @@ class Search extends Component {
             propertyList = propertyList.filter((x) => common.FormatNumber(x.coc) <= common.FormatNumber(maxCOC));
         }
         if (minGRM) {
-            debugger
             propertyList = propertyList.filter((x) => common.FormatNumber(x.grossRentMultiplier) >= common.FormatNumber(minGRM));
         }
         if (maxGRM) {

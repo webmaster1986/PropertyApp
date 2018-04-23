@@ -9,8 +9,8 @@ class Settings extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            firstName: props.user && props.user.first_name || '',
-            lastName: props.user && props.user.last_name || '',
+            firstName: (props.user && props.user.first_name) || '',
+            lastName: (props.user && props.user.last_name) || '',
             error: '',
             success: '',
         };
@@ -73,7 +73,7 @@ class Settings extends Component {
   }
 
   render() {
-      const {lastName, timeZone, firstName, error, success} = this.state;
+      const {lastName, firstName, error, success} = this.state;
       return (
           <div>
               <main className="flex">

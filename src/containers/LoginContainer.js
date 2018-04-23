@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import * as Actions from '../redux/actions/loginActions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
